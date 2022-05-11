@@ -1,0 +1,177 @@
+
+/* main_banner--------------------------- */
+
+.main_banner {
+    width: 100%; height: 550px;
+    background: url(../img/alice_goods_img/banner_main.png) no-repeat center/cover;
+}
+
+/* Best Goods----------------------- */
+
+.bestGoods_wrap {
+    margin-top: 170px; text-align: center;
+}
+
+.section_title h2 {
+    position: relative; display: inline;
+    font-size: 40px; font-weight: bold; line-height: 40px;
+    color: #4ab5d6;
+}
+.bestGoods_wrap .section_container {
+    margin-top: 40px;
+}
+
+.icon_bg {
+    position: absolute; top: 50%; margin-top: -18.5px; left: -33px;
+}
+
+.bg_content {
+   position: relative; width: 100%; height: 500px;
+}
+
+.btn_slider_wrap {
+    position: absolute; top: 0; left: 50%; margin-left: -700px;
+    width: 1400px; height: 500px;
+}
+.btn_slider_wrap.on {width: 100%; left: 0; margin-left: 0;}
+.btn_slider_wrap.on .btn_slider.left {left: 0;}
+.btn_slider_wrap.on .btn_slider.right {right: 0;}
+.btn_slider {
+    position: absolute; top: 50%; margin-top: -46.5px;
+    z-index: 1; cursor: pointer;
+}
+.btn_slider.left {left: -66px;}
+.btn_slider.right {right: -66px;}
+
+.bg_slider {
+    position: relative; width: 1400px; height: 500px;
+    left: 50%; margin-left: -700px; overflow: hidden;
+}
+.bg_slider_inner {
+    position: absolute; top: 0; left: 0;
+    width: 1000%; height: 100%;
+}
+.bg_slider li {
+    width: 1400px; height: 100%; float: left;
+}
+.bg_slider li.on {
+    left: 0;
+}
+.bg_slider li img {
+    width: 1400px; height: 500px;
+}
+/* Alice Goods----------------------------- */
+
+.aliceGoods_wrap {
+    margin-top: 223px; text-align: center;
+}
+.aliceGoods_wrap .section_container {
+    margin-top: 62px;
+}
+.aliceGoods_wrap .section_title {
+    position: relative;
+}
+.icon_ag {position: absolute; top: 50%; margin-top: -18px; left: -33px;}
+.aliceGoods_wrap .section_title::after {
+    position: absolute; display: block; width: 1400px; height: 11px;
+    content: ""; background-color: #aae3f4;
+    bottom: -37px; left: 50%; margin-left: -700px;
+}
+
+.goods_tab_menu {
+    width: 1400px; height: 50px; margin: 0 auto;
+    padding: 0 285px; box-sizing: border-box;
+}
+.goods_tab_menu > li {
+    width: 150px; height: 50px; float: left; margin-right: 20px;
+    border: 1px solid #aae3f4; box-sizing: border-box;
+    text-align: center; line-height: 50px; font-size: 18px; cursor: pointer;
+}
+.goods_tab_menu li:last-child {margin-right: 0;}
+.goods_tab_menu li:hover, .goods_tab_menu li.on {
+    background-color: #aae3f4; color: #fff; font-weight: bold;
+}
+
+/* goods_tabs */
+.goods_tabs {
+    position: relative; width: 1400px; height: 1300px;
+    margin: 40px auto 0 auto;
+}
+
+.goods_list {
+    display: none; position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+.goods_list.on {
+    display: block;
+}
+.goods_list > li {
+    position: relative;
+    width: 400px; height: 400px; float: left; margin: 0 100px 50px 0;
+    border: 1px solid #eeeeee; padding: 30px; box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+}
+.goods_list > li:nth-child(3n) {margin-right: 0;}
+.goods_img img {
+    max-width: 340px; max-height: 340px;
+    transition: all 0.5s;
+}
+.goods_list > li:hover img {
+    transform: scale(1.1); opacity: 0.3;
+}
+
+.goods_list > li:hover .goods_contxt {
+    height: 94px; bottom: 0;
+}
+
+.goods_contxt {
+    position: absolute; bottom: -40px; left: 0;
+    width: 100%; height: 0;
+    background-color: rgba(250, 205, 137, 0.314);
+    padding: 20px 15px; box-sizing: border-box;
+    z-index: 1; transition: all 0.5s;
+    text-align: left; overflow: hidden;
+}
+.goods_contxt .goods_title {font-weight: bold; float: left;}
+.goods_contxt .goods_price {
+    font-size: 14px; margin-top: 10px; float: left; width: 100%;
+}
+.goods_contxt .goods_bullet {
+    width: 38px; height: 16px; float: left; margin-left: 10px;
+    background: url(../img/alice_goods_img/bullet_hot.png) no-repeat;
+}
+.goods_on {
+    position: absolute; bottom: 15px; right: 20px;
+}
+.goods_on a {
+    display: block; width: 36px; height: 36px; float: left; margin-left: 15px;
+    border-radius: 50%;
+}
+.goods_on .btn_wish {background: #f6b37f url(../img/alice_goods_img/icon_heart_1.png) no-repeat center/70%;}
+.goods_on .btn_cart {background: #f6b37f url(../img/alice_goods_img/icon_bag_1.png) no-repeat center/50%;}
+
+/* banner1 */
+
+.banner1 {
+    position: relative; width: 100%; height: 300px;
+    margin: 154px 0 230px 0;
+    background: url(../img/alice_goods_img/banner_1_back.png) no-repeat center/cover;
+}
+.banner1 img {position: absolute;}
+/* 
+.banner_1_back2 {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 300px; overflow: hidden;
+}
+.banner_1_contxt {top: 84px; left: 449px;}
+.banner_1_goods1 {top: 22px; right: 432px;}
+.banner_1_goods2 {top: 64px; right: 600px;}
+*/
+.banner_1_back2 {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 0; overflow: hidden;
+}
+.banner_1_back2 img {bottom: 0; left: 0;}
+.banner_1_contxt {top: 84px; left: 200px; opacity: 0;}
+.banner_1_goods1 {top: 22px; right: 200px; opacity: 0; z-index: 1;}
+.banner_1_goods2 {top: 64px; right: 200px; opacity: 0; z-index: 1;}
+

@@ -1,0 +1,232 @@
+.main_banner5{
+   width: 100%;
+   height: 550px;
+   background: url(../img/event_img/event_main.png) no-repeat center;
+}
+.sub_title{
+    width: 1400px;
+    height: 550px;
+    margin: 0 auto;
+}
+.sub_title img:first-child{
+    display: block;
+    padding: 140px 0 24px 50px;
+}
+.sub_title img:last-child{
+    display: block;
+    padding-left:50px;
+}
+.event{
+    width: 1400px;
+    height: 2600px;
+    overflow: hidden;
+    margin: 164px auto 0;    
+    position: relative;    
+}
+.event::after{
+    content: '';
+    width: 1400px;
+    height: 1px;
+    background: #8a4b9c;
+    position: absolute;
+    top: 52px;
+    left: 0;
+}
+.bs_tab_menu{
+    width: 1400px;
+    height: 53px; 
+}
+.bs_tab_menu li a{
+    width: 350px; 
+    height: 53px; 
+    display: block;
+    float: left;
+    border: 1px solid #8a4b9c; 
+    border-radius: 10px 10px 0 0; 
+    box-sizing: border-box;
+    text-align: center; 
+    line-height: 53px; 
+    font-size: 24px; 
+    font-weight: bold;
+    color: #8a4b9c; 
+}
+.bs_tab_menu li.on a,.bs_tab_menu li a:hover {
+    border: none; 
+    background-color: #8a4b9c; 
+    color: #fff;
+}
+.tab_content{
+    width: 1380px;
+    position: absolute;
+    left:0;
+    top:53px;
+    display: none; 
+}
+.tab_content.on{
+    display: block;
+}  
+.tab_content li{
+    position: relative; 
+    margin-top: 140px;
+    height: 550px;
+}
+.banner{
+    width: 1380px;
+    box-shadow: 2px 1px 7px 1px;
+    background: #fff;
+}
+.banner1, .banner2, .banner3{
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.banner1{
+    background-image: url(../img/event_img/banner1_back1.png);
+}
+.banner2{
+    background-image: url(../img/event_img/banner1_back2.png);
+}
+.banner3{
+    background-image: url(../img/event_img/banner1_back3.png);
+}
+.banner::after{
+    content: '';
+    width: 80px;
+    height: 1px;
+    background: #040404;
+    position: absolute;
+    top: 220px;
+    left: 78px;
+}
+.banner_text{
+    position: absolute;
+    overflow: hidden;
+    left: 70px;
+    top:-20px;
+    opacity: 0;
+    z-index: 10;
+    color: #777;
+}
+.banner_text span:nth-child(1){
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+.banner_text span:nth-child(2){
+    font-size: 48px;
+    display: block;
+    margin-bottom: 90px;
+}
+.banner_text span:nth-child(3){
+    font-size: 26px;
+    display: block;
+    line-height: 40px;
+}
+.banner1_icon img, 
+.banner2_icon img, 
+.banner3_icon img{
+    display: block;
+    position: absolute;
+}
+.banner1_icon img:nth-child(1){
+    top: 405px;
+    left:0;
+    opacity: 0;
+}
+.banner1_icon img:nth-child(2){
+    top: 62px;
+    left:0;
+    opacity: 0;
+}
+.banner1_icon img:nth-child(3){
+    top: 386px;
+    left: 0;
+    opacity: 0;
+}
+.banner1_icon img:nth-child(4){
+    bottom: 40px;
+    right: -10px;
+    opacity: 0;
+}
+.banner1_icon a, 
+.banner2_icon a, 
+.banner3_icon a{
+    display: block;
+    width: 230px;
+    height: 55px;
+    border-radius: 15px;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 55px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 200px;
+    z-index: 10;
+    bottom:-10px;
+    opacity: 0;
+}
+.banner1_icon a:hover, 
+.banner2_icon a:hover,
+.banner3_icon a:hover{
+    border:none;
+    color: #fff;
+}
+.banner1_icon a:hover{
+    background: #e68fc1;
+}
+.banner2_icon a:hover{
+    background: #66d1b6;
+}
+.banner3_icon a:hover{
+    background: #ffd868;
+}
+/* banner2 start */
+.banner2_icon img:nth-child(1){
+    top: 50px;
+    right: 0;
+    opacity: 0;
+}
+.banner2_icon img:nth-child(2){
+    top: 35px;
+    left: 300px;
+    opacity: 0;
+}
+.banner2_icon img:nth-child(3){
+    top: 35px;
+    left: 0;
+    opacity: 0;
+}
+.banner2_icon img:nth-child(4){
+    top: 97px;
+    right: 0;
+    opacity: 0;
+}
+.banner2_icon img:nth-child(5){
+    bottom: 30px;
+    right: -10px;
+    opacity: 0;
+}
+/* banner3 start */
+.banner3_icon img:nth-child(1){
+    bottom: 30px;
+    left: 700px;
+    opacity: 0;
+}
+.banner3_icon img:nth-child(2){
+    bottom: 60px;
+    right: 0;
+    opacity: 0;
+}
+/* tab2 banner start */
+.banner4, .banner5{
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+.banner4{
+    background-image: url(../img/event_img/Closing_banner1.png);
+}
+.banner5{
+    background-image: url(../img/event_img/Closing_banner2.png);
+}

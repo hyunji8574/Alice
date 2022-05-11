@@ -1,0 +1,1082 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>Alice</title>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> -->	
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.6, minimum-scale=1.0"/>
+
+	<!-- meta 태그 -->
+	<meta name="Subject" content="Alice Premium English Book Store">
+	<meta name="Title" content="Alice">
+	<meta name="Keywords" content="Alice, Bookstore, English, 앨리스, 서점, 영어, 영어원서, 포트폴리오">
+	<meta name="Description" content="앨리스">
+	<meta name="Author" content="2020 더조은 1조">
+	<meta name="Publisher" content="2020 더조은 1조 배현지">
+	<meta name="Classification" content="Alice">
+	<meta name="Location" content="서울시 서초구 서산빌딩 4, 5F 더조은컴퓨터아카데미">
+	<meta name="Author-Date" content="2020-06-02">
+	<meta name="Copyright" content="copyright@Alice.com">
+	<meta name="Robots" content="index,follow"> 
+
+    <!-- 파비콘 -->
+	<link rel="shortcut icon" href="../img/main_img/favicon-16x16.png">
+	<link rel="apple-touch-icon" href="../img/main_img/favicon-16x16.png">
+
+    <!-- 공통 스타일 시트 -->
+	<link href='../css/reset.css' type='text/css' rel='stylesheet'>
+	<link href='../css/common.css' type='text/css' rel='stylesheet'>
+	<link href='../css/header.css' type='text/css' rel='stylesheet'>
+    <link href='../css/footer.css' type='text/css' rel='stylesheet'>
+    
+    <!-- 현재 페이지 스타일 시트 -->
+	<link href='../css/alice_goods.css' type='text/css' rel='stylesheet'>
+
+    <!-- 기본 스크립트 -->
+	<script src='../js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='../js/lib/jquery.mobile-1.4.5.min.js' type='text/javascript' charset='utf-8'></script> -->
+	<script src='../js/lib/jquery.easing.1.3.js'></script>
+	
+    <!-- user jQuery 웹개발자용 -->
+    <!-- Fontawesome include -->
+    <script src="https://kit.fontawesome.com/9b9de0467f.js" crossorigin="anonymous"></script>
+    <!-- 헤더 스크립트 -->
+    <script src='../js/header.js'></script>
+    <!-- 현재페이지 스크립트 -->
+    <script src="../js/alice_goods.js"></script>
+	
+	<!-- 크로스브라우징 -->
+	<!--[if (lte IE 9)]>
+	<script src='js/lib/IE9.js' type='text/javascript' charset='utf-8'></script>		
+	<![endif]-->
+
+	<!--[if (lte IE 8)]>
+	<script src='js/lib/html5shiv.min.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/PIE.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/jqPIE.js' type='text/javascript' charset='utf-8'></script>		
+	<link href='css/ie78.css' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+</head>
+<body>
+
+<!-- start wrap -->
+<div id='wrap'>
+
+<!--start top section -->
+<section class="top_panel">
+    <h2 class="hidden">top_panel</h2>
+    <div class="back">
+        <div class="login_wrap">
+            <a href="#" class="pause"></a>
+            <div class="login_container top_wrap1">
+                <div class="title">
+                    <img src="../img/login_img/welcome.png" alt="welcome">
+                </div>
+                <div class="login_id">
+                    <input type="text" name="text1" placeholder="master@naver.com">
+                    <div class="person">
+                        <img src="../img/login_img/log_person.png" alt="log_person">
+                    </div>
+                </div>
+                <div class="login_password">
+                    <input type="password" name="text2" class="bar" placeholder="password">
+                    <div class="lock">
+                        <img src="../img/login_img/log_lock.png" alt="log_lock">
+                    </div>
+                </div> 
+                <div class="button_signin">
+                    <a href="#"><span>SIGN IN</span></a>
+                </div>
+                <div class="et">
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">Sign Up</a>
+                </div>
+                <div class="sns">
+                    <img src="../img/login_img/log_or.png" alt="or">
+                    <a href="#" class="google">
+                        <img src="../img/login_img/google_logo.png" alt="google_logo">
+                        <span>SIGN IN WITH GOOGLE</span>
+                    </a>
+                    <a href="#" class="twitter">
+                        <img src="../img/login_img/twitter_logo.png" alt="twitter_logo">
+                        <span>SIGN IN WITH TWITTER</span>
+                    </a>
+                    <a href="#" class="naver">
+                        <img src="../img/login_img/naver_logo.png" alt="naver_logo">
+                        <span>SIGN IN WITH NAVER</span>
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- end login -->
+    <!-- end joinUs -->
+    <div class="back">
+        <div class="join_wrap">
+            <a href="#" class="pause"></a>
+            <div class="join_container top_wrap1">
+                <div class="title">
+                    <img src="../img/login_img/sign_up.png" alt="sign_up">
+                </div>
+                <div class="id_area">
+                    <label for="email">ID</label>
+                    <ul class="email_s">
+                        <li><input type="text" id="email" placeholder="이메일아이디"></li>
+                        <li>@</li>
+                        <li><input type="text" placeholder="이메일주소" ></li>
+                    </ul>
+                </div>
+                <div class="password_area">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" placeholder="비밀번호입력">
+                </div>
+                <div class="password_area">
+                    <label for="password_co">Confirm password</label>
+                    <input type="password" id="password_co" placeholder="비밀번호확인">
+                </div>
+                <div class="password_area">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" placeholder="이름을 입력하세요">
+                </div>
+                <img src="../img/login_img/join_us_logo.png" class="join_logo" alt="join_us_logo">
+                <div class="button_signin ">
+                    <a href="#"><span>SIGN IN</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end top section -->
+
+<!-- start header -->
+<header id="header_wrap">
+    <div class="top_menu_wrap">
+        <div class="inner">
+            <ul class="top_menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="logo_area">
+        <div class="inner">
+            <div class="logo"><a href="../index.html"><img src="../img/main_img/logo.png" alt="logo"></a></div>
+            <div class="search_area">
+                <input type="text" name="search" class="search_input" placeholder="Search..">
+                <a href="#"><div class="btn_search"><img src="../img/main_img/btn_search.png" alt="btn_search"></div></a>
+            </div>
+        </div>
+    </div>
+    <div class="gnb_wrap">
+        <div class="inner">
+            <ul class="gnb">
+                <li><a href="#"><img src="../img/main_img/btn_bars.png" alt="btn_bars" class="btn_bars">ALL</a>
+                    <ul class="categories">
+                        <li>레벨별
+                            <ul class="categories_sub">
+                                 <li><a href="#">AR레벨</a></li>
+                                 <li><a href="#">Lexile 레벨</a></li>
+                            </ul>
+                        </li>
+                        <li>장르별
+                            <ul class="categories_sub">
+                                <li><a href="#">소설/시</a></li>
+                                <li><a href="#">위인전</a></li>
+                                <li><a href="#">동화</a></li>
+                                <li><a href="#">경제/과학</a></li>
+                                <li><a href="#">만화</a></li>
+                                <li><a href="#">교육서적</a></li>
+                                <li><a href="#">자기계발</a></li>
+                                <li><a href="#">예술/역사</a></li>
+                                <li><a href="#">기타</a></li>
+                           </ul>
+                        </li>
+                        <li>작가별
+                            <ul class="categories_sub">
+                                <li><a href="#">로알드 달</a></li>
+                                <li><a href="#">로이스 로리</a></li>
+                                <li><a href="#">루이스 새커</a></li>
+                                <li><a href="#">사라 스튜어트</a></li>
+                                <li><a href="#">앤서니 브라운</a></li>
+                                <li><a href="#">에릭 칼</a></li>
+                                <li><a href="#">J.K. 롤링</a></li>
+                           </ul>
+                        </li>
+                        <li>시리즈별
+                            <ul class="categories_sub">
+                                <li><a href="#">뉴베리 수상작</a></li>
+                                <li><a href="#">The Chronicles of Narnia</a></li>
+                                <li><a href="#">My Weird School Daze</a></li>
+                                <li><a href="#">Magic Tree House</a></li>
+                                <li><a href="#">Andrew Clements</a></li>
+                                <li><a href="#">Judy Moody</a></li>
+                                <li><a href="#">E. B. WHITE</a></li>
+                                <li><a href="#">Dragonsitter Library Boxset</a></li>
+                                <li><a href="#">Marvin Redpost</a></li>
+                           </ul>
+                        </li>
+                        <li>Picture Books
+                            <ul class="categories_sub">
+                                <li><a href="#">Best</a></li>
+                                <li><a href="#">set</a></li>
+                                <li><a href="#">칼데콧 수상작</a></li>
+                                <li><a href="#">디즈니</a></li>
+                                <li><a href="#">Book & CD</a></li>
+                                <li><a href="#">A-D</a></li>
+                                <li><a href="#">E-L</a></li>
+                                <li><a href="#">M-W</a></li>
+                           </ul>
+                        </li>
+                        <li>Readers Books
+                            <ul class="categories_sub">
+                                <li><a href="#">Best</a></li>
+                                <li><a href="#">Phonix</a></li>
+                                <li><a href="#">I Can Read</a></li>
+                                <li><a href="#">Step into Reading</a></li>
+                                <li><a href="#">Read to Read</a></li>
+                                <li><a href="#">Scholatic Reading</a></li>
+                                <li><a href="#">Penguin(Puffin) Readers</a></li>
+                                <li><a href="#">National Geographic</a></li>
+                                <li><a href="#">Dr.Seuss Readers</a></li>
+                                <li><a href="#">DK Readers</a></li>
+                                <li><a href="#">World of Reading</a></li>
+                           </ul>
+                        </li>
+                        <li>Chapter Books
+                            <ul class="categories_sub">
+                                <li><a href="#">A-C</a></li>
+                                <li><a href="#">D-F</a></li>
+                                <li><a href="#">I-L</a></li>
+                                <li><a href="#">G-H</a></li>
+                                <li><a href="#">M-N</a></li>
+                                <li><a href="#">T-W</a></li>
+                                <li><a href="#">X-Z</a></li>
+                           </ul>
+                        </li>
+                        <li>오디오북</li>
+                        <li>E-Book</li>
+                    </ul>
+                </li>
+                <li><a href="newbooks.html">New Arrivals</a>
+                    <ul class="gnb_sub">
+                        <li><a href="#">이달의신간</a></li>
+                        <li><a href="#">추천신간</a></li>
+                    </ul>
+                </li>
+                <li><a href="bestseller.html">Best Sellers</a>
+                    <ul class="gnb_sub">
+                        <li><a href="#">주간베스트</a></li>
+                        <li><a href="#">월간베스트</a></li>
+                        <li><a href="#">스테디셀러</a></li>
+                        <li><a href="#">우리들만의베스트</a></li>
+                    </ul>
+                </li>
+                <li><a href="learningbooks.html">Learning Books</a>
+                    <ul class="gnb_sub">
+                        <li><a href="#">어린이교재</a></li>
+                        <li><a href="#">Teaching Guide</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">Events</a>
+                    <ul class="gnb_sub">
+                        <li><a href="#">진행중인이벤트</a></li>
+                        <li><a href="#">마감/결과확인</a></li>
+                    </ul>
+                </li>
+                <li><a href="spectal_offers.html">Special Offers</a>
+                    <ul class="gnb_sub">
+                        <li><a href="#">1+1특가</a></li>
+                        <li><a href="#">파격할인</a></li>
+                    </ul>
+                </li>
+                <li><a href="usedbook.html">Used Books</a></li>
+                <li class="on"><a href="#">Alice Goods</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- start main_banner -->
+<div class="main_banner">
+    <!-- <img src="../img/alice_goods_img/banner_1.png" alt="banner_1"> -->
+</div>
+<!-- end main_banner -->
+
+<!-- start Best Goods -->
+<section class="bestGoods_wrap">
+    <div class="section_title">
+        <h2><img src="../img/alice_goods_img/icon_bg.png" alt="icon_bg" class="icon_bg">Best Goods</h2>
+    </div>
+    <div class="section_container">
+        <div class="bg_content">
+            <div class="btn_slider_wrap">
+                <div class="btn_slider left">
+                    <img src="../img/alice_goods_img/btn_slide_left.png" alt="btn_slide_left">
+                </div>
+                <div class="btn_slider right">
+                    <img src="../img/alice_goods_img/btn_slide_right.png" alt="btn_slide_right">
+                </div>
+            </div>
+            <div class="bg_slider">
+                <ul class="bg_slider_inner">
+                    <li class="on">
+                        <img src="../img/alice_goods_img/slide_1.jpg" alt="slide_1">
+                    </li>
+                    <li>
+                        <img src="../img/alice_goods_img/slide_2.jpg" alt="slide_2">
+                    </li>
+                    <li>
+                        <img src="../img/alice_goods_img/slide_3.jpg" alt="slide_3">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Best Goods -->
+
+<!-- start Alice Goods Tab Menu -->
+<section class="aliceGoods_wrap">
+    <div class="section_title">
+        <h2><img src="../img/alice_goods_img/icon_ag.png" alt="icon_ag" class="icon_ag">Alice Goods</h2>
+    </div>
+    <div class="section_container">
+        <div class="ag_content">
+            <ul class="goods_tab_menu">
+                <li id="note" class="on">Note</li>
+                <li id="reading_table">Reading Table</li>
+                <li id="eco_bag">Eco Bag</li>
+                <li id="book_lamp">Book Lamp</li>
+                <li id="cup">Cup</li>
+            </ul>
+            <ul class="goods_tabs">
+                <li>
+                    <ul class="goods_list note on">
+                        <li>
+                            <a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/note_1.jpg" alt="note_1">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">앨리스 학생노트(중고등)</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">1,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/note_2.jpg" alt="note_2">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">모비딕 양장노트</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">7,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/note_3.jpg" alt="note_3">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">검은 튤립 유선노트(반양장)</a></p>
+                                <p class="goods_price">4,500원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/note_4.jpg" alt="note_4">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">고양이의 지침서 스프링노트</a></p>
+                                <p class="goods_price">2,000원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/note_5.jpg" alt="note_5">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">한여름밤의 꿈 스프링노트</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">2,000원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/note_6.jpg" alt="note_6">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">빨간머리 앤 유선노트(반양장)</a></p>
+                                <p class="goods_price">4,500원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/note_7.jpg" alt="note_7">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">빨간머리 앤 스프링노트</a></p>
+                                <p class="goods_price">2,000원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/note_8.jpg" alt="note_8">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">프랑켄슈타인 양장노트</a></p>
+                                <p class="goods_price">7,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/note_9.jpg" alt="note_9">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">프랑켄슈타인 유선노트</a></p>
+                                <p class="goods_price">2,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="goods_list reading_table">
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_stand_1.jpg" alt="book_stand_1">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">지혜로운 고양이가 되기위한 지침서<br>
+                                리딩 스탠드
+                                </a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">9,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_stand_2.jpg" alt="book_stand_1">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">프랑켄슈타인 리딩 스탠드</a></p>
+                                <p class="goods_price">9,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_stand_3.jpg" alt="book_stand_3">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">모비딕 리딩 스탠드</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">9,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_stand_4.jpg" alt="book_stand_4">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">빨간머리 앤 리딩 스탠드</a></p>
+                                <p class="goods_price">9,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_stand_5.jpg" alt="book_stand_5">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">템페스트 리딩 스탠드</a></p>
+                                <p class="goods_price">9,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_stand_6.jpg" alt="book_stand_6">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">이상한 나라의 앨리스<br>
+                                    리딩 스탠드</a></p>
+                                <p class="goods_price">9,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_stand_7.jpg" alt="book_stand_7">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">셜록 홈즈 리딩 스탠드</a></p>
+                                <p class="goods_price">9,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_stand_8.jpg" alt="book_stand_8">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">프란츠 카프카 리딩 스탠드</a></p>
+                                <p class="goods_price">9,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_stand_9.jpg" alt="book_stand_9">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">위대한 개츠비 리딩 스탠드</a></p>
+                                <p class="goods_price">9,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="goods_list eco_bag">
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/eco_bag_1.jpg" alt="eco_bag_1">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">이상한 나라의 앨리스 에코백</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">15,000원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/eco_bag_2.jpg" alt="eco_bag_2">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">작은 아씨들 에코백</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">15,000원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/eco_bag_3.jpg" alt="eco_bag_3">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">프랑켄슈타인 에코백</a></p>
+                                <p class="goods_price">15,000원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/eco_bag_4.jpg" alt="eco_bag_4">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">빨간머리 앤 에코백</a></p>
+                                <p class="goods_price">15,000원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/eco_bag_5.jpg" alt="eco_bag_5">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">다이너소어 에코백</a></p>
+                                <p class="goods_price">13,000원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/eco_bag_6.jpg" alt="eco_bag_6">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">애니멀 에코백</a></p>
+                                <p class="goods_price">13,000원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/eco_bag_7.jpg" alt="eco_bag_7">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">커트 보네거트 에코백</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">9,500원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/eco_bag_8.jpg" alt="eco_bag_8">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">제인 오스틴 애코백</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">9,500원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="goods_list book_lamp">
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_lamp_1.jpg" alt="book_lamp_1">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">어린왕자 구슬 램프(LED)</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">14,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_lamp_2.jpg" alt="book_lamp_2">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">앨리스 구슬 램프(LED)</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">14,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_lamp_3.jpg" alt="book_lamp_3">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">병정 토끼 구슬 램프(LED)</a></p>
+                                <p class="goods_price">14,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_lamp_4.jpg" alt="book_lamp_4">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">모비딕 구슬 램프(LED)</a></p>
+                                <p class="goods_price">14,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_lamp_5.jpg" alt="book_lamp_5">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">앨리스 육각 실루엣 램프</a></p>
+                                <p class="goods_price">15,500원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_lamp_6.jpg" alt="book_lamp_6">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">노인과 바다 육각 실루엣 램프</a></p>
+                                <p class="goods_price">15,500원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_lamp_7.jpg" alt="book_lamp_7">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">스페이스 오디세이 육각 실루엣 램프</a></p>
+                                <p class="goods_price">15,500원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/book_lamp_8.jpg" alt="book_lamp_8">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">셜록 홈즈 육각 실루엣 램프</a></p>
+                                <p class="goods_price">15,500원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="goods_list cup">
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/cup_1.jpg" alt="cup_1">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">맨스필드 파크(퍼플)</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">7,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/cup_2.jpg" alt="cup_2">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">맨스필드 파크(그린)</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">7,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/cup_3.jpg" alt="cup_3">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">검은 튤립</a></p>
+                                <p class="goods_bullet"></p>
+                                <p class="goods_price">7,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/cup_4.jpg" alt="cup_4">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">이상한 나라의 앨리스</a></p>
+                                <p class="goods_price">7,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/cup_5.jpg" alt="cup_5">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">오즈의 마법사</a></p>
+                                <p class="goods_price">7,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/cup_6.jpg" alt="cup_6">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">엄지공주</a></p>
+                                <p class="goods_price">7,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/cup_7.jpg" alt="cup_7">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">작은 아씨들</a></p>
+                                <p class="goods_price">7,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="goods_img">
+                                <img src="../img/alice_goods_img/cup_8.jpg" alt="cup_8">
+                            </div>
+                            </a>
+                            <div class="goods_contxt">
+                                <p class="goods_title"><a href="#">이성과 감성</a></p>
+                                <p class="goods_price">7,800원</p>
+                                <div class="goods_on">
+                                    <a href="#" class="btn_wish"></a>
+                                    <a href="#" class="btn_cart"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end Alice Goods Tab Menu -->
+
+<!-- start banner1 -->
+<section class="banner1">
+    <h2 class="hidden">banner1</h2>
+    <div class="banner_1_back2">
+        <img src="../img/alice_goods_img/banner_1_back2.png" alt="banner_1_back2">
+    </div>
+    <img src="../img/alice_goods_img/banner_1_contxt.png" alt="banner_1_contxt" class="banner_1_contxt">
+    <img src="../img/alice_goods_img/banner_1_goods1.png" alt="banner_1_goods1" class="banner_1_goods1">
+    <img src="../img/alice_goods_img/banner_1_goods2.png" alt="banner_1_goods2" class="banner_1_goods2">
+</section>
+<!-- end banner1 -->
+
+<!-- start footer -->
+<footer id="footer_wrap">
+    <ul class="footer_top_menu">
+        <li>
+            <a href="#">
+            <img src="../img/main_img/icon_cs.png" alt="icon_cs" class="footer_icon">
+            <span>고객문의</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+            <img src="../img/main_img/icon_delivery.png" alt="icon_delivery" class="footer_icon">
+            <span>배송&반품</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+            <img src="../img/main_img/icon_office.png" alt="icon_office" class="footer_icon">
+            <span>오시는길</span>
+            </a>
+        </li>
+    </ul>
+    <div class="footer_content">
+        <ul class="footer_menu">
+            <li>고객서비스
+                <ul class="ft_menu_sub">
+                    <li><a href="#">도움말</a></li>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">제품리콜</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">피드백</a></li>
+                </ul>
+            </li>
+            <li>회사정보
+                <ul class="ft_menu_sub">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="ft_location_wrap">
+            <p class="ft_rocation">
+                서울특별시 강남구<br>
+                남부순환로 391길 19
+            </p>
+            <ul class="ft_sns">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <div class="ft_logo"><img src="../img/main_img/logo_footer.png" alt="logo_footer"></div>
+        </div>
+        <p class="copyright">
+            copyright ⓒ 2020 Alice. All rights reserved. 본 사이트는 포트폴리오 용이며 상업적 이용이 불가능 합니다.
+        </p>
+    </div>
+</footer>
+<!-- end footer -->
+
+</div>
+<!-- end wrap -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

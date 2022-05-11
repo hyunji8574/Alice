@@ -1,0 +1,217 @@
+.list1{
+    position: relative;
+    width: 1380px;
+    height: 400px;
+    display: none;
+}
+/* list1 */
+.th_content1 {
+    width: 1380px; height: 400px; margin: 0 auto;
+    padding: 0 62px; box-sizing: border-box;
+}
+.th_content1 ul{
+    width: 100%;
+    height: 400px;
+}
+.th_content1 ul li {
+    position: relative;
+    width: 250px; height: 360px; float: left;
+    margin: 20px 85px 35px 0;
+    border: 1px solid #eeeeee; box-sizing: border-box;
+}
+.th_content1 ul li:nth-child(4) {margin-right: 0;}
+.th_content1 > li > a {
+    display: block; width: 100%; height: 100%;
+    padding: 20px; box-sizing: border-box;
+}
+/* hover */
+.th_content1 li:hover .th_list_point, 
+.th_content2 li:hover .th_list_point,
+.th_content3 li:hover .th_list_point  
+{
+    background-color: #e699ed;
+}
+.th_content1 li:hover .th_list_contxt,
+.th_content2 li:hover .th_list_contxt,
+.th_content3 li:hover .th_list_contxt,
+.th_content1 li:hover .point_title,
+.th_content2 li:hover .point_title,
+.th_content3 li:hover .point_title,
+.th_content1 li:hover .percent,
+.th_content2 li:hover .percent,
+.th_content3 li:hover .percent,
+.th_content1 li:hover .txt,
+.th_content2 li:hover .txt,
+.th_content3 li:hover .txt {
+    color: #fff;
+    z-index: 15;
+}
+.th_content1 li:hover .bullet,
+.th_content2 li:hover .bullet,
+.th_content3 li:hover .bullet {
+    display: none;
+}
+.th_content1 li:hover .th_list_on,
+.th_content2 li:hover .th_list_on,
+.th_content3 li:hover .th_list_on {
+    height: 120px;
+}
+/* ----------------- */
+
+.th_list_point {
+    position: absolute; top: 0; left: -32.5px;
+    width: 65px; height: 65px; background-color: #fff;
+    border: 1px solid #e699ed; border-radius: 10px; box-sizing: border-box;
+    text-align: center; 
+    padding: 11px 0;
+    display: block;
+    transition: all 0.5s;
+}
+.th_list_point .point_title {
+    font-size: 18px; font-weight: bold; color: #e699ed;
+    transition: all 0.5s;
+}
+
+.th_list_point .txt {
+    font-size: 12px; color: #e699ed;
+    display: block;
+    padding-top: 3px;
+    transition: all 0.5s;
+}
+
+.th_content1 .book_img,
+.th_content2 .book_img{
+    position: absolute; top: 20px; left: 20px;
+    width: 210px; height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.th_content1 .book_img1 {background-image: url(../img/event_img/book_harry1.png);}
+.th_content1 .book_img2 {background-image: url(../img/event_img/book_harry2.png);}
+.th_content1 .book_img3 {background-image: url(../img/event_img/book_harry3.png);}
+.th_content1 .book_img4 {background-image: url(../img/event_img/book_harry4.png);}
+.th_list_contxt {
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; height: 120px;
+    transition: all 0.5s;
+    
+}
+.th_list_contxt .book_title {
+    position: absolute; top: 20px; left: 20px; text-align: left;
+    font-weight: bold;
+}
+.th_list_contxt .price {
+    position: absolute; bottom: 20px; left: 20px;
+}
+.th_list_contxt .price_off {
+    position: absolute; bottom: 38px; left: 20px;
+    font-size: 12px; text-decoration: line-through;
+}
+.th_list_contxt .bullet {
+    position: absolute; bottom: 20px; right: 20px;
+}
+.th_list_contxt .bullet img {margin-left: 5px;}
+
+.th_list_on {
+    position: absolute; bottom: 0; left: 0; overflow: hidden;
+    width: 100%;
+    height: 0;
+    background-color: #e699ed;
+    transition: all 0.5s;
+}
+.th_list_on > a {
+    position: absolute;
+    margin-left: 15px;
+    display: block; width: 36px; height: 36px;
+    background-color: #fff; border-radius: 50%;
+    z-index: 15;
+
+}
+.btn_wish {
+    bottom: 15px; right: 70px;
+    background:url(../img/event_img/icon_heart_1.png)no-repeat center;
+    background-size: 70%;
+}
+.th_list_on a:hover.btn_wish{
+    background-image:url(../img/event_img/icon_heart_1_on.png);
+
+}
+.btn_cart {
+    bottom: 15px; right: 20px;
+    background:url(../img/event_img/icon_bag_1.png)no-repeat center;
+    background-size: 50%;
+}
+.th_list_on a:hover.btn_cart{
+    background-image:url(../img/event_img/icon_bag_1_on.png);
+
+}
+.list2{
+    position: relative;
+    width: 1380px;
+    height: 400px;
+    display: none;
+}
+/* list2 */
+.th_content2 {
+    width: 1380px; height: 400px; margin: 0 auto;
+    padding: 0 62px; box-sizing: border-box;
+}
+.th_content2 ul{
+    width: 100%;
+    height: 400px;
+}
+.th_content2 ul li {
+    position: relative;
+    width: 250px; height: 360px; float: left;
+    margin: 20px 85px 35px 0;
+    border: 1px solid #eeeeee; box-sizing: border-box;
+}
+.th_content2 ul li:nth-child(4) {margin-right: 0;}
+.th_content2 > li > a {
+    display: block; width: 100%; height: 100%;
+    padding: 20px; box-sizing: border-box;
+}
+.th_content2 .book_img1 {background-image: url(../img/main_img/book_th_1.jpg);}
+.th_content2 .book_img2 {background-image: url(../img/main_img/book_th_2.png);}
+.th_content2 .book_img3 {background-image: url(../img/main_img/book_th_3.jpg);}
+.th_content2 .book_img4 {background-image: url(../img/main_img/book_th_4.jpg);}
+
+.list3{
+    position: relative;
+    width: 1380px;
+    height: 400px;
+    display: none;
+}
+/* list3 */
+.th_content3 {
+    width: 1380px; height: 400px; margin: 0 auto;
+    padding: 0 62px; box-sizing: border-box;
+}
+.th_content3 ul{
+    width: 100%;
+    height: 400px;
+}
+.th_content3 ul li {
+    position: relative;
+    width: 250px; height: 360px; float: left;
+    margin: 20px 85px 35px 0;
+    border: 1px solid #eeeeee; box-sizing: border-box;
+}
+.th_content3 ul li:nth-child(4) {margin-right: 0;}
+.th_content3 > li > a {
+    display: block; width: 100%; height: 100%;
+    padding: 20px; box-sizing: border-box;
+}
+.th_content3 .book_img {
+    position: absolute; top: 50px; left: 48px;
+    width: 160px; height: 160px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.th_content3 .book_img1 {background-image: url(../img/event_img/book_Mo_Willems1.png);}
+.th_content3 .book_img2 {background-image: url(../img/event_img/book_Mo_Willems2.png);}
+.th_content3 .book_img3 {background-image: url(../img/event_img/book_Mo_Willems3.png);}
+.th_content3 .book_img4 {background-image: url(../img/event_img/book_Mo_Willems4.png);}

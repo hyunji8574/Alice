@@ -1,0 +1,444 @@
+/*start main_banner------------------------------------ */
+
+.main_banner{
+    background: url(../img/special_offers_img/special_banner.jpg) no-repeat;
+    position: relative;
+    width: 100%; 
+    height: 550px;
+    overflow: hidden;
+}
+
+.main_txt{ position: relative; margin: 140px 0 0 310px; }
+
+.main_txt li{ padding-bottom: 24px; }
+
+/*end main_banner------------------------------------ */
+
+/*start Recommended Books-----------------------------*/
+section::after{
+    display: block;
+    content: ""; clear: both;
+}
+
+.Recommended{
+    width: 100%; height: auto;
+    margin-top: 165px; text-align: center;
+}
+
+.section_title h2 {
+    position: relative; 
+    display: inline;
+    font-size: 40px; 
+    color: #4ab5d6; 
+    line-height: 40px;
+}
+.section_title h4 {
+    font-size: 14px; 
+    font-weight: normal; 
+    line-height: 14px; 
+    margin-top: 23px;
+}
+
+.icon_bs {
+    position: absolute; 
+    width: 42px;
+    height: 28px;
+    bottom: 10px; 
+    left: -53px;
+}
+
+/*ed.section_title*/
+
+.section_roll {
+    width: 1400px; height: 370px; margin: 50px auto 0 auto;
+}
+
+.roll_list {
+    position: relative;
+    width: 1100px; height: 370px; background-color: #ffdede; float: left;
+}
+.roll_list_inner {
+    width: 950px; height: 100%; margin: 26px auto 0 auto; overflow: hidden;
+}
+.list_roll {
+    position: relative; width: 1000%; height: 100%; top: 0; left: 0;
+}
+.roll_list #left {
+    display: inline-block; position: absolute; top: 50%; margin-top: -23.5px; left: 16px;
+    z-index: 1;
+}
+.roll_list #right {
+    display: inline-block; position: absolute; top: 50%; margin-top: -23.5px; right: 16px;
+    z-index: 1;
+}
+
+.roll_list li {float: left; margin-right: 50px;}
+.roll_list li:last-child {margin-right: 0;}
+
+.gift {
+    float: left;
+}
+
+.list_roll .list_title {
+    line-height: 16px; font-weight: bold; text-align: left; margin-top: 13px;
+}
+.list_roll .list_price {
+    display: block;
+    line-height: 16px; text-align: left; margin-top: 3px;
+}
+.list_roll .list_off {
+    display: block;
+    font-size: 12px; line-height: 12px; text-align: left; margin-top: 15px;
+    text-decoration: line-through;
+}
+
+.cir_btn{ position: absolute; left: 1300px; }
+
+.cir_btn li{
+    float: left;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.cir_btn li a{
+    display: block;
+    float: left;
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition:  all .5s;
+}
+
+.cir_btn li.on a{background: #ff5656;}
+
+.gift{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 370px;
+    border: 1px solid #ffdede;
+    box-sizing: border-box;
+}
+
+.gift_line{
+    position: absolute; top: 50%; left: 50%; margin-top: -174px; margin-left: -134.5px;
+    width: 269px; height: 348px;
+    border: 2px solid #ff5656;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.gift_txt{position: absolute; top: 50px; left: 50%; margin-left: -95.5px;}
+
+.gift_txt li{margin-bottom: 30px;}
+
+.gift_txt li:nth-child(1){margin-bottom: 10px;}
+
+.usb{
+    position: absolute; top: 129px; left: 50%; margin-left: -40px;
+    transition: all 0.5s;
+}
+.gift:hover .usb {
+    transform: scale(1.1);
+}
+
+/*end Recommended Books-----------------------------*/
+
+/*start Best Special Discount---------------------------------------- */
+
+.best_special {
+    width: 100%; height: auto;
+    margin-top: 165px; text-align: center;
+}
+.icon_th {
+    position: absolute; bottom: 5px; left: -40px;
+}
+
+/* th_content */
+.section_container {
+    width: 100%; margin-top: 47px;
+}
+
+.th_content {
+    width: 1400px; height: 755px; margin: 0 auto;
+    padding: 0 62px; box-sizing: border-box;
+}
+.th_content ul li {
+    position: relative;
+    width: 250px; height: 360px; float: left;
+    margin: 0 92px 35px 0;
+    border: 1px solid #eeeeee; box-sizing: border-box;
+}
+.th_content ul li:nth-child(4n) {margin-right: 0;}
+.th_content > li > a {
+    display: block; width: 100%; height: 100%;
+    padding: 20px; box-sizing: border-box;
+}
+
+/* 마우스오버 애니메이션 */
+.th_content li:hover .th_list_point {
+    background-color: #fbd664;
+}
+.th_content li:hover .th_list_contxt,
+.th_content li:hover .num,
+.th_content li:hover .percent,
+.th_content li:hover .txt_off {
+    color: #fff;
+}
+.th_content li:hover .bullet {
+    display: none;
+}
+.th_content li:hover .th_list_on {
+    height: 120px;
+}
+/* ----------------- */
+
+.th_list_point {
+    position: absolute; top: 0; left: -32.5px;
+    width: 65px; height: 65px; background-color: #fff;
+    border: 1px solid #fbd664; border-radius: 10px; box-sizing: border-box;
+    text-align: left; padding: 9px;
+    transition: all 0.5s;
+}
+.th_list_point .num {
+    font-size: 24px; font-weight: bold; color: #fbd664;
+    transition: all 0.5s;
+}
+.th_list_point .percent {
+    font-size: 16px; font-weight: bold; color: #fbd664;
+    vertical-align: bottom;
+    transition: all 0.5s;
+}
+.th_list_point .txt_off {
+    font-size: 12px; color: #fbd664;
+    transition: all 0.5s;
+}
+
+.th_content .book_img {
+    position: absolute; top: 20px; left: 20px;
+    width: 210px; height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.th_content .book_img1 {background-image: url(../img/special_offers_img/special_booK01.png);}
+.th_content .book_img2 {background-image: url(../img/special_offers_img/special_booK02.png);}
+.th_content .book_img3 {background-image: url(../img/special_offers_img/special_booK03.png);}
+.th_content .book_img4 {background-image: url(../img/special_offers_img/special_booK04.png);}
+.th_content .book_img5 {background-image: url(../img/special_offers_img/special_booK05.png);}
+.th_content .book_img6 {background-image: url(../img/special_offers_img/special_booK06.png);}
+.th_content .book_img7 {background-image: url(../img/special_offers_img/special_booK07.png);}
+.th_content .book_img8 {background-image: url(../img/special_offers_img/special_booK08.png);}
+
+.th_list_contxt {
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; height: 120px;
+    transition: all 0.5s;
+}
+.th_list_contxt .book_title {
+    position: absolute; top: 20px; left: 20px; text-align: left;
+    font-weight: bold; z-index: 2;
+}
+.th_list_contxt .price {
+    position: absolute; bottom: 20px; left: 20px; z-index: 2;
+}
+.th_list_contxt .price_off {
+    position: absolute; bottom: 38px; left: 20px;
+    font-size: 12px; text-decoration: line-through; z-index: 2;
+}
+.th_list_contxt .bullet {
+    position: absolute; bottom: 20px; right: 20px;
+}
+.th_list_contxt .bullet img {margin-left: 5px;}
+
+.th_list_on {
+    position: absolute; bottom: 0; left: 0; overflow: hidden;
+    width: 100%; height: 0;
+    background-color: #fbd664;
+    z-index: 1; transition: all 0.5s;
+}
+.th_list_on > a {
+    position: absolute;
+    margin-left: 15px;
+    display: block; width: 36px; height: 36px;
+    background-color: #fff; border-radius: 50%;
+}
+
+.th_list_on > a:hover {
+    position: absolute;
+    margin-left: 15px;
+    display: block; width: 36px; height: 36px;
+    background-color: #fff; border-radius: 50%;
+}
+
+.btn_wish {
+    bottom: 15px; right: 70px;
+    background: url(../img/special_offers_img/icon_heart_1.png) no-repeat center/70%;
+}
+
+.btn_wish:hover{
+    bottom: 15px; right: 70px;
+    background: url(../img/special_offers_img/icon_heart_2.png) no-repeat center/70%;
+}
+
+.btn_cart {
+    bottom: 15px; right: 20px;
+    background: url(../img/special_offers_img/icon_bag_1.png) no-repeat center/50%;
+}
+
+.btn_cart:hover {
+    bottom: 15px; right: 20px;
+    background: url(../img/special_offers_img/icon_bag_2.png) no-repeat center/50%;
+}
+/*ed Treasure Hunt*/
+
+/*start event_banner*/
+.event_banner{
+    width: 100%; height: 400px;
+    margin-top: 165px; 
+}
+
+.bg{height: 400px;}
+
+.ant{
+    width: 414px; height: 373px;
+    position: relative;
+    left: 280px; top: -375px;
+}
+
+.event_txt{
+    position: relative;
+    left: 630px; top: -660px;
+}
+
+.event_txt>li{margin-bottom: 15px;}
+
+.event_txt>li:nth-child(3){position: relative; left: 400px; top: -10px;}
+
+/*ed event_banner*/
+
+
+/*start Best 1+1 Bargain*/
+.one_Bargain {
+    width: 100%; height: auto;
+    margin: 165px 0 165px 0; text-align: center;
+}
+.icon_one {
+    position: absolute; bottom: 5px; left: -40px;
+}
+
+/*th_Plus*/
+.section_Plus {
+    width: 100%; margin-top: 47px;
+}
+
+.th_Plus {
+    width: 1400px; height: 755px; margin: 0 auto;
+    padding: 0 62px; box-sizing: border-box;
+}
+
+.th_Plus ul li {
+    position: relative;
+    width: 370px; height: 550px; float: left;
+    margin: 0 80px 70px 0;
+    background: #f0f0f0;
+}
+
+.plus_box{
+    display: none;
+    width: 370px; height: 370px; float: left;
+    position: relative;
+    margin-top: 180px;
+    background: #d8cab3;
+    border-radius: 185px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.th_Plus ul li:nth-child(3) {margin-right: 0;}
+.th_Plus ul li:nth-child(6) {margin-right: 0;}
+
+.th_Plus > li > a {
+    display: block; width: 100%; height: 100%;
+    padding: 20px; box-sizing: border-box;
+}
+
+
+/* 마우스오버 애니메이션 */
+.th_Plus li:hover .th_Plus_contxt{color: #fff;}
+.th_Plus li:hover .bullet{display: none;}
+.th_Plus li:hover {background-color: #fff;}
+.th_Plus li:hover .plus_box{display: block;}
+.th_Plus li:hover .th_Plus_on {height: 120px;}
+/* ----------------- */
+
+
+.th_Plus .Plus_img {
+    position: absolute; top: 40px; left: 60px;
+    width: 250px; height: 350px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.th_Plus .Plus_img1 {background-image: url(../img/special_offers_img/one_book01.png);}
+.th_Plus .Plus_img2 {background-image: url(../img/special_offers_img/one_book02.jpg);}
+.th_Plus .Plus_img3 {background-image: url(../img/special_offers_img/one_book03.jpg);}
+.th_Plus .Plus_img4 {background-image: url(../img/special_offers_img/one_book04.jpg);}
+.th_Plus .Plus_img5 {background-image: url(../img/special_offers_img/one_book05.jpg);}
+.th_Plus .Plus_img6 {background-image: url(../img/special_offers_img/one_book06.jpg);}
+
+.th_Plus_contxt {
+    position: absolute; top:385px; bottom: 0; left: 40px;
+    width: 280px; height: 120px;
+    transition: all 0.5s;
+}
+
+.th_Plus_contxt .Plus_title {
+    position: absolute; top: 20px; left: 20px; text-align: left;
+    font-weight: bold; z-index: 2;
+}
+.th_Plus_contxt .Plus {
+    position: absolute; bottom: 20px; left: 20px; z-index: 2;
+}
+.th_Plus_contxt .Plus_off {
+    position: absolute; bottom: 38px; left: 20px;
+    font-size: 12px; text-decoration: line-through; z-index: 2;
+}
+.th_Plus_contxt .bullet {
+    position: absolute; bottom: 20px; right: 20px;
+}
+.th_Plus_contxt .bullet img {margin-left: 5px;}
+
+
+.th_Plus_on {
+    position: absolute; bottom: 0; left: -50px; top: 390px; overflow: hidden;
+    width: 100%; height: 0;
+    z-index: 1; transition: all 0.5s;
+}
+
+.th_Plus_on > a {
+    position: absolute;
+    margin-left: 15px;
+    display: block; width: 36px; height: 36px;
+    background-color: #fff; border-radius: 50%;
+}
+
+.th_Plus_on > a:hover {
+    position: absolute;
+    margin-left: 15px;
+    display: block; width: 36px; height: 36px;
+    background-color: #fff; border-radius: 50%;
+}
+
+.btn_wish {
+    bottom: 15px; right: 70px;
+    background: url(../img/special_offers_img/icon_heart_1.png) no-repeat center/70%;
+}
+.btn_cart {
+    bottom: 15px; right: 20px;
+    background: url(../img/special_offers_img/icon_bag_1.png) no-repeat center/50%;
+}
+/*ed Best 1+1 Bargain*/

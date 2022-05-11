@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Alice</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> -->
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.6, minimum-scale=1.0"
+    />
+
+    <!-- meta 태그 -->
+    <meta name="Subject" content="Alice Premium English Book Store" />
+    <meta name="Title" content="Alice" />
+    <meta
+      name="Keywords"
+      content="Alice, Bookstore, English, 앨리스, 서점, 영어, 영어원서, 포트폴리오"
+    />
+    <meta name="Description" content="앨리스" />
+    <meta name="Author" content="2020 더조은 1조" />
+    <meta name="Publisher" content="2020 더조은 1조" />
+    <meta name="Classification" content="Alice" />
+    <meta
+      name="Location"
+      content="서울시 서초구 서산빌딩 4, 5F 더조은컴퓨터아카데미"
+    />
+    <meta name="Author-Date" content="2020-06-02" />
+    <meta name="Copyright" content="copyright@Alice.com" />
+    <meta name="Robots" content="index,follow" />
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../img/main_img/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="../img/main_img/favicon-16x16.png" />
+
+    <!-- 공통 스타일 시트 -->
+    <link href="../css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="../css/common.css" type="text/css" rel="stylesheet" />
+    <link href="../css/header.css" type="text/css" rel="stylesheet" />
+    <link href="../css/footer.css" type="text/css" rel="stylesheet" />
+
+    <!-- 현재 페이지 스타일 시트 -->
+    <link href="../css/bestseller.css" type="text/css" rel="stylesheet" />
+
+    <!-- 기본 스크립트 -->
+    <script
+      src="../js/lib/jquery-1.12.4.min.js"
+      type="text/javascript"
+      charset="utf-8">
+    </script>
+    <script src="../js/lib/jquery.easing.1.3.js"></script>
+
+    <!-- user jQuery 웹개발자용 -->
+    <!-- Fontawesome include -->
+    <script src="https://kit.fontawesome.com/9b9de0467f.js" crossorigin="anonymous"></script>
+    <!-- 헤더 스크립트 -->
+    <script src="../js/header.js"></script>
+    <!--현재 페이지 스크립트-->
+    <script src="../js/bestseller.js"></script>
+    <!-- 크로스브라우징 -->
+    <!--[if (lte IE 9)]>
+      <script
+        src="js/lib/IE9.js"
+        type="text/javascript"
+        charset="utf-8"
+      ></script>
+    <![endif]-->
+
+    <!--[if (lte IE 8)]>
+      <script
+        src="js/lib/html5shiv.min.js"
+        type="text/javascript"
+        charset="utf-8"
+      ></script>
+      <script
+        src="js/lib/PIE.js"
+        type="text/javascript"
+        charset="utf-8"
+      ></script>
+      <script
+        src="js/lib/jqPIE.js"
+        type="text/javascript"
+        charset="utf-8"
+      ></script>
+      <link href="css/ie78.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+  </head>
+  <body>
+    <!-- start wrap -->
+    <div id="wrap">
+        
+    <!--start top section -->
+    <section class="top_panel">
+        <h2 class="hidden">top_panel</h2>
+        <div class="back">
+            <div class="login_wrap">
+                <a href="#" class="pause"></a>
+                <div class="login_container top_wrap1">
+                    <div class="title">
+                        <img src="../img/login_img/welcome.png" alt="welcome">
+                    </div>
+                    <div class="login_id">
+                        <input type="text" name="text1" placeholder="master@naver.com">
+                        <div class="person">
+                            <img src="../img/login_img/log_person.png" alt="log_person">
+                        </div>
+                    </div>
+                    <div class="login_password">
+                        <input type="password" name="text2" class="bar" placeholder="password">
+                        <div class="lock">
+                            <img src="../img/login_img/log_lock.png" alt="log_lock">
+                        </div>
+                    </div> 
+                    <div class="button_signin">
+                        <a href="#"><span>SIGN IN</span></a>
+                    </div>
+                    <div class="et">
+                        <a href="#">Forgot Password?</a>
+                        <a href="#">Sign Up</a>
+                    </div>
+                    <div class="sns">
+                        <img src="../img/login_img/log_or.png" alt="or">
+                        <a href="#" class="google">
+                            <img src="../img/login_img/google_logo.png" alt="google_logo">
+                            <span>SIGN IN WITH GOOGLE</span>
+                        </a>
+                        <a href="#" class="twitter">
+                            <img src="../img/login_img/twitter_logo.png" alt="twitter_logo">
+                            <span>SIGN IN WITH TWITTER</span>
+                        </a>
+                        <a href="#" class="naver">
+                            <img src="../img/login_img/naver_logo.png" alt="naver_logo">
+                            <span>SIGN IN WITH NAVER</span>
+                        </a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- end login -->
+        <!-- end joinUs -->
+        <div class="back">
+            <div class="join_wrap">
+                <a href="#" class="pause"></a>
+                <div class="join_container top_wrap1">
+                    <div class="title">
+                        <img src="../img/login_img/sign_up.png" alt="sign_up">
+                    </div>
+                    <div class="id_area">
+                        <label for="email">ID</label>
+                        <ul class="email_s">
+                            <li><input type="text" id="email" placeholder="이메일아이디"></li>
+                            <li>@</li>
+                            <li><input type="text" placeholder="이메일주소" ></li>
+                        </ul>
+                    </div>
+                    <div class="password_area">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" placeholder="비밀번호입력">
+                    </div>
+                    <div class="password_area">
+                        <label for="password_co">Confirm password</label>
+                        <input type="password" id="password_co" placeholder="비밀번호확인">
+                    </div>
+                    <div class="password_area">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" placeholder="이름을 입력하세요">
+                    </div>
+                    <img src="../img/login_img/join_us_logo.png" class="join_logo" alt="join_us_logo">
+                    <div class="button_signin ">
+                        <a href="#"><span>SIGN IN</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end top section -->
+
+    <!-- start header -->
+    <header id="header_wrap">
+        <div class="top_menu_wrap">
+            <div class="inner">
+                <ul class="top_menu">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo_area">
+            <div class="inner">
+                <div class="logo"><a href="../index.html"><img src="../img/main_img/logo.png" alt="logo"></a></div>
+                <div class="search_area">
+                    <input type="text" name="search" class="search_input" placeholder="Search..">
+                    <a href="#"><div class="btn_search"><img src="../img/main_img/btn_search.png" alt="btn_search"></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="gnb_wrap">
+            <div class="inner">
+                <ul class="gnb">
+                    <li><a href="#"><img src="../img/main_img/btn_bars.png" alt="btn_bars" class="btn_bars">ALL</a>
+                        <ul class="categories">
+                            <li>레벨별
+                                <ul class="categories_sub">
+                                    <li><a href="#">AR레벨</a></li>
+                                    <li><a href="#">Lexile 레벨</a></li>
+                                </ul>
+                            </li>
+                            <li>장르별
+                                <ul class="categories_sub">
+                                    <li><a href="#">소설/시</a></li>
+                                    <li><a href="#">위인전</a></li>
+                                    <li><a href="#">동화</a></li>
+                                    <li><a href="#">경제/과학</a></li>
+                                    <li><a href="#">만화</a></li>
+                                    <li><a href="#">교육서적</a></li>
+                                    <li><a href="#">자기계발</a></li>
+                                    <li><a href="#">예술/역사</a></li>
+                                    <li><a href="#">기타</a></li>
+                            </ul>
+                            </li>
+                            <li>작가별
+                                <ul class="categories_sub">
+                                    <li><a href="#">로알드 달</a></li>
+                                    <li><a href="#">로이스 로리</a></li>
+                                    <li><a href="#">루이스 새커</a></li>
+                                    <li><a href="#">사라 스튜어트</a></li>
+                                    <li><a href="#">앤서니 브라운</a></li>
+                                    <li><a href="#">에릭 칼</a></li>
+                                    <li><a href="#">J.K. 롤링</a></li>
+                            </ul>
+                            </li>
+                            <li>시리즈별
+                                <ul class="categories_sub">
+                                    <li><a href="#">뉴베리 수상작</a></li>
+                                    <li><a href="#">The Chronicles of Narnia</a></li>
+                                    <li><a href="#">My Weird School Daze</a></li>
+                                    <li><a href="#">Magic Tree House</a></li>
+                                    <li><a href="#">Andrew Clements</a></li>
+                                    <li><a href="#">Judy Moody</a></li>
+                                    <li><a href="#">E. B. WHITE</a></li>
+                                    <li><a href="#">Dragonsitter Library Boxset</a></li>
+                                    <li><a href="#">Marvin Redpost</a></li>
+                            </ul>
+                            </li>
+                            <li>Picture Books
+                                <ul class="categories_sub">
+                                    <li><a href="#">Best</a></li>
+                                    <li><a href="#">set</a></li>
+                                    <li><a href="#">칼데콧 수상작</a></li>
+                                    <li><a href="#">디즈니</a></li>
+                                    <li><a href="#">Book & CD</a></li>
+                                    <li><a href="#">A-D</a></li>
+                                    <li><a href="#">E-L</a></li>
+                                    <li><a href="#">M-W</a></li>
+                            </ul>
+                            </li>
+                            <li>Readers Books
+                                <ul class="categories_sub">
+                                    <li><a href="#">Best</a></li>
+                                    <li><a href="#">Phonix</a></li>
+                                    <li><a href="#">I Can Read</a></li>
+                                    <li><a href="#">Step into Reading</a></li>
+                                    <li><a href="#">Read to Read</a></li>
+                                    <li><a href="#">Scholatic Reading</a></li>
+                                    <li><a href="#">Penguin(Puffin) Readers</a></li>
+                                    <li><a href="#">National Geographic</a></li>
+                                    <li><a href="#">Dr.Seuss Readers</a></li>
+                                    <li><a href="#">DK Readers</a></li>
+                                    <li><a href="#">World of Reading</a></li>
+                            </ul>
+                            </li>
+                            <li>Chapter Books
+                                <ul class="categories_sub">
+                                    <li><a href="#">A-C</a></li>
+                                    <li><a href="#">D-F</a></li>
+                                    <li><a href="#">I-L</a></li>
+                                    <li><a href="#">G-H</a></li>
+                                    <li><a href="#">M-N</a></li>
+                                    <li><a href="#">T-W</a></li>
+                                    <li><a href="#">X-Z</a></li>
+                            </ul>
+                            </li>
+                            <li>오디오북</li>
+                            <li>E-Book</li>
+                        </ul>
+                    </li>
+                    <li><a href="newbooks.html">New Arrivals</a>
+                        <ul class="gnb_sub">
+                            <li><a href="#">이달의신간</a></li>
+                            <li><a href="#">추천신간</a></li>
+                        </ul>
+                    </li>
+                    <li class="on"><a href="#">Best Sellers</a>
+                        <ul class="gnb_sub">
+                            <li><a href="#">주간베스트</a></li>
+                            <li><a href="#">월간베스트</a></li>
+                            <li><a href="#">스테디셀러</a></li>
+                            <li><a href="#">우리들만의베스트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="learningbooks.html">Learning Books</a>
+                        <ul class="gnb_sub">
+                            <li><a href="#">어린이교재</a></li>
+                            <li><a href="#">Teaching Guide</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="event.html">Events</a>
+                        <ul class="gnb_sub">
+                            <li><a href="#">진행중인이벤트</a></li>
+                            <li><a href="#">마감/결과확인</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="spectal_offers.html">Special Offers</a>
+                        <ul class="gnb_sub">
+                            <li><a href="#">1+1특가</a></li>
+                            <li><a href="#">파격할인</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="usedbook.html">Used Books</a></li>
+                    <li><a href="alice_goods.html">Alice Goods</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+      <!-- start main_banner -->
+
+      <div class="main_banner">
+        <ul class="main_title">
+           <li><img src="../img/bestseller_img/BestSeller.png" alt="title"></li>
+           <li><img src="../img/bestseller_img/mainBanner_title.png" alt="subtitle"></li>
+        </ul>
+    </div>
+    
+
+      <!-- end main_banner -->
+
+      <!-- start best sellar -->
+      <section class="bestSellers_wrap">
+        <div class="section_title">
+            <h2><img src="../img/bestseller_img/alice07_1.png" alt="icon_bs" class="icon_bs">This month BestSeller</h2>
+            <h4>최근 한 달 동안 가장 많이 판매된 책입니다.</h4>
+        </div>
+        <div class="section_container">
+            <div class="bs_content2">
+                <ul class="bs_tab_menu">
+                    <li class="on">This month BestSeller</li>
+                    <li>This Week BestSeller</li>
+                    <li>SteadySeller</li>
+                </ul>
+                <ul class="bs_tab tab1 on">
+                    <li>
+                        <a href="#">
+                            <div class="book_img book1">
+                                <!-- <img src="../img/main_img/book_bs_4.jpg" alt="book_bs_4" class="book_img"> -->
+                            </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Sharon  M. Draper</p>
+                                <span class="price">5,600원</span>
+                                <span class="bullet">
+                                    <img src="../img/main_img/bullet_us.png" alt="bullet_us">
+                                    <img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out">
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book2">
+                                <!-- <img src="../img/main_img/book_bs_5.jpg" alt="book_bs_5" class="book_img"> -->
+                            </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Wayside School 
+                                    gets a 
+                                    Little Stranger
+                                    (미국판)</p>
+                                <span class="price">5,800원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book3">
+                                <!-- <img src="../img/main_img/book_bs_6.jpg" alt="book_bs_6" class="book_img"> -->
+                            </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">IBI Zoboi</p>
+                                <span class="price">8,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book4">
+                                <!-- <img src="../img/main_img/book_bs_7.jpg" alt="book_bs_7" class="book_img"> -->
+                            </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Inside Out <br>and 
+                                    Back Again</p>
+                                <span class="price">9,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book5">
+                                <!-- <img src="../img/main_img/book_bs_8.jpg" alt="book_bs_8" class="book_img"> -->
+                            </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">The Carrying</p>
+                                <span class="price">5,000원</span>
+                                <span class="bullet">
+                                    <img src="../img/main_img/bullet_uk.png" alt="bullet_uk">
+                                    <img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out">
+                                </span>
+                            </div>             
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book6">
+                                <!-- <img src="../img/main_img/book_bs_9.jpg" alt="book_bs_9" class="book_img"> -->
+                            </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">The Will 
+                                    and the Wilds</p>
+                                <span class="price">8,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_uk.png" alt="bullet_uk"></span>
+                            </div>          
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book7">
+                                <!-- <img src="../img/main_img/book_bs_10.jpg" alt="book_bs_10" class="book_img"> -->
+                            </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Zaitoun</p>
+                                <span class="price">9,600원</span>
+                                <span class="bullet">
+                                    <img src="../img/main_img/bullet_uk.png" alt="bullet_uk">
+                                    <img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out">
+                                </span>
+                            </div>                      
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book8">
+                                <!-- <img src="../img/main_img/book_bs_11.jpg" alt="book_bs_11" class="book_img"> -->
+                            </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Secrets at the Chocolate 
+                                    Mansion<br>
+                                    Away</p>
+                                <span class="price">11,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_uk.png" alt="bullet_uk"></span>
+                            </div>                     
+                        </a>
+                    </li>
+                </ul>
+                <ul class="bs_tab tab2">
+                    <li>
+                        <a href="#">
+                            <div class="book_img book9">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Scary Stories for Young Foxes</p>
+                                <span class="price">5,600원</span>
+                                <span class="bullet">
+                                    <img src="../img/main_img/bullet_us.png" alt="bullet_us">
+                                    <img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out">
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book10">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Sam & Dave Dig a Hole</p>
+                                <span class="price">5,800원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book11">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">The Girl Who<br>
+                                    Draank the Moon</p>
+                                <span class="price">8,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book12">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Wittington</p>
+                                <span class="price">9,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book13">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Black Enough</p>
+                                <span class="price">5,000원</span>
+                                <span class="bullet">
+                                    <img src="../img/main_img/bullet_uk.png" alt="bullet_uk">
+                                    <img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out">
+                                </span>
+                            </div>             
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book14">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">A Wolf Called Wander<br>
+                                    Story</p>
+                                <span class="price">8,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_uk.png" alt="bullet_uk"></span>
+                            </div>          
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book15">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">I Want My Hat Back</p>
+                                <span class="price">9,600원</span>
+                                <span class="bullet">
+                                    <img src="../img/main_img/bullet_uk.png" alt="bullet_uk">
+                                    <img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out">
+                                </span>
+                            </div>                      
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book16">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">A Good Kind of Trouble<br>
+                                    Away</p>
+                                <span class="price">11,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_uk.png" alt="bullet_uk"></span>
+                            </div>                     
+                        </a>
+                    </li>
+                </ul>
+                <ul class="bs_tab tab3">
+                    <li>
+                        <a href="#">
+                            <div class="book_img book14">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Gabriel’s Clock</p>
+                                <span class="price">5,600원</span>
+                                <span class="bullet">
+                                    <img src="../img/main_img/bullet_us.png" alt="bullet_us">
+                                    <img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out">
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book15">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Catalyst</p>
+                                <span class="price">5,800원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book16">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">The Girl Who<br>
+                                    Could Not Dream</p>
+                                <span class="price">8,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book8">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Sometimes You<br>
+                                    Fly</p>
+                                <span class="price">9,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book7">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Cat Wishes</p>
+                                <span class="price">5,000원</span>
+                                <span class="bullet">
+                                    <img src="../img/main_img/bullet_uk.png" alt="bullet_uk">
+                                    <img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out">
+                                </span>
+                            </div>             
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book6">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">The Stone Girl's<br>
+                                    Story</p>
+                                <span class="price">8,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_uk.png" alt="bullet_uk"></span>
+                            </div>          
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book5">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">Lintang and the<br>
+                                    Pirate Queen</p>
+                                <span class="price">9,600원</span>
+                                <span class="bullet">
+                                    <img src="../img/main_img/bullet_uk.png" alt="bullet_uk">
+                                    <img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out">
+                                </span>
+                            </div>                      
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="book_img book4">                        </div>
+                            <div class="bs_tab_contxt">
+                                <p class="book_title">The Year I Flew<br>
+                                    Away</p>
+                                <span class="price">11,600원</span>
+                                <span class="bullet"><img src="../img/main_img/bullet_uk.png" alt="bullet_uk"></span>
+                            </div>                     
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+ <!-- end Best Learningbooks -->
+
+
+<!-- start event -->
+ <section class="sub_banner">
+    <p>
+      <a href="#">
+        &gt; Listen<br>from Author
+      </a>
+    </p>
+    <ul>
+      <li class="zeroBook">
+        <a href="#">
+          <img src="../img/bestseller_img/subBook4.png" alt="" />
+        </a>
+      </li>
+      <li class="firstBook">
+        <a href="#">
+          <img src="../img/bestseller_img/subBook1.png" alt="" />
+        </a>
+        <a href="#">
+        <p>The Magic Elephant</p>
+        </a>
+      </li>
+      <li class="secondBook">
+        <a href="#">
+          <img src="../img/bestseller_img/subBook2.png" alt="" />
+        </a>
+        <a href="#">
+          <p>The Tale of Despereaux 
+          </p>
+          </a>
+      </li>
+      <li class="thirdBook">
+        <a href="#">
+          <img src="../img/bestseller_img/subBook3.png" alt="" />
+        </a>
+        <a href="#">
+          <p>Because of Winn-Dixie</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+<!-- end event -->
+
+ <!-- start treasureHunt--> 
+<section class="treasureHunt_wrap">
+  <div class="section_title">
+      <h2><img src="../img/main_img/icon_th.png" alt="icon_th" class="icon_th">Used Best Seller</h2>
+      <h4>가장 인기있는 책들을 저렴한 가격으로 만날 기회를 잡아보세요.</h4>
+  </div>
+  <div class="section_container">
+      <div class="th_content">
+          <ul>
+              <li>
+                  <div class="th_list_point">
+                      <span class="num">55</span><span class="percent">%</span>
+                      <span class="txt_off">off</span>
+                  </div>
+                  <a href="#">
+                      <div class="book_img book_img1"></div>
+                      <!-- <img src="../img/main_img/book_th_1.jpg" alt="book_th_1" class="book_img"> -->
+                      <div class="th_list_contxt">
+                          <p class="book_title">The Big Game</p>
+                          <span class="price_off">8,600</span>
+                          <span class="price">4,730원</span>
+                          <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"><img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out"></span>
+                      </div>
+                  </a>
+                  <div class="th_list_on">
+                      <a href="#" class="btn_wish"></a>
+                      <a href="#" class="btn_cart"></a>
+                  </div>
+              </li>
+              <li>
+                  <div class="th_list_point">
+                      <span class="num">50</span><span class="percent">%</span>
+                      <span class="txt_off">off</span>
+                  </div>
+                  <a href="#">
+                      <div class="book_img book_img2"></div>
+                      <!-- <img src="../img/main_img/book_th_2.png" alt="book_th_2" class="book_img"> -->
+                      <div class="th_list_contxt">
+                          <p class="book_title">Two Weeks in India with Water Aid</p>
+                          <span class="price_off">8,200</span>
+                          <span class="price">4,100원</span>
+                          <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"><img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out"></span>
+                      </div>
+                  </a>
+                  <div class="th_list_on">
+                      <a href="#" class="btn_wish"></a>
+                      <a href="#" class="btn_cart"></a>
+                  </div>
+              </li>
+              <li>
+                  <div class="th_list_point">
+                      <span class="num">51</span><span class="percent">%</span>
+                      <span class="txt_off">off</span>
+                  </div>
+                  <a href="#">
+                      <div class="book_img book_img3"></div>
+                      <!-- <img src="../img/main_img/book_th_3.jpg" alt="book_th_3" class="book_img"> -->
+                      <div class="th_list_contxt">
+                          <p class="book_title">The Wolf, the Duck and the Mouse</p>
+                          <span class="price_off">10,600</span>
+                          <span class="price">5,400원</span>
+                          <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                      </div>                     
+                  </a>
+                  <div class="th_list_on">
+                      <a href="#" class="btn_wish"></a>
+                      <a href="#" class="btn_cart"></a>
+                  </div>
+              </li>
+              <li>
+                  <div class="th_list_point">
+                      <span class="num">48</span><span class="percent">%</span>
+                      <span class="txt_off">off</span>
+                  </div>
+                  <a href="#">
+                      <div class="book_img book_img4"></div>
+                      <!-- <img src="../img/main_img/book_th_4.jpg" alt="book_th_4" class="book_img"> -->
+                      <div class="th_list_contxt">
+                          <p class="book_title">Ocean Animals</p>
+                          <span class="price_off">11,500</span>
+                          <span class="price">5,520원</span>
+                          <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                      </div>                   
+                  </a>
+                  <div class="th_list_on">
+                      <a href="#" class="btn_wish"></a>
+                      <a href="#" class="btn_cart"></a>
+                  </div>
+              </li>
+              <li>
+                  <div class="th_list_point">
+                      <span class="num">50</span><span class="percent">%</span>
+                      <span class="txt_off">off</span>
+                  </div>
+                  <a href="#">
+                      <div class="book_img book_img5"></div>
+                      <!-- <img src="../img/main_img/book_th_5.jpg" alt="book_th_5" class="book_img"> -->
+                      <div class="th_list_contxt">
+                          <p class="book_title">The Vanderbeekers of 141st Street</p>
+                          <span class="price_off">11,500</span>
+                          <span class="price">5,520원</span>
+                          <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"><img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out"></span>
+                      </div>
+                  </a>
+                  <div class="th_list_on">
+                      <a href="#" class="btn_wish"></a>
+                      <a href="#" class="btn_cart"></a>
+                  </div>
+              </li>
+              <li>
+                  <div class="th_list_point">
+                      <span class="num">49</span><span class="percent">%</span>
+                      <span class="txt_off">off</span>
+                  </div>
+                  <a href="#">
+                      <div class="book_img book_img6"></div>
+                      <!-- <img src="../img/main_img/book_th_6.jpg" alt="book_th_6" class="book_img"> -->
+                      <div class="th_list_contxt">
+                          <p class="book_title">Peek A Who?</p>
+                          <span class="price_off">9,300</span>
+                          <span class="price">4,650원</span>
+                          <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"><img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out"></span>
+                      </div>
+                  </a>
+                  <div class="th_list_on">
+                      <a href="#" class="btn_wish"></a>
+                      <a href="#" class="btn_cart"></a>
+                  </div>
+              </li>
+              <li>
+                  <div class="th_list_point">
+                      <span class="num">52</span><span class="percent">%</span>
+                      <span class="txt_off">off</span>
+                  </div>
+                  <a href="#">
+                      <div class="book_img book_img7"></div>
+                      <!-- <img src="../img/main_img/book_th_7.jpg" alt="book_th_7" class="book_img"> -->
+                      <div class="th_list_contxt">
+                          <p class="book_title">Spy Camp</p>
+                          <span class="price_off">12,600</span>
+                          <span class="price">6,550원</span>
+                          <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                      </div>
+                  </a>
+                  <div class="th_list_on">
+                      <a href="#" class="btn_wish"></a>
+                      <a href="#" class="btn_cart"></a>
+                  </div>
+              </li>
+              <li>
+                  <div class="th_list_point">
+                      <span class="num">57</span><span class="percent">%</span>
+                      <span class="txt_off">off</span>
+                  </div>
+                  <a href="#">
+                      <div class="book_img book_img8"></div>
+                      <!-- <img src="../img/main_img/book_th_8.png" alt="book_th_8" class="book_img"> -->
+                      <div class="th_list_contxt">
+                          <p class="book_title">The Secret of Winter House</p>
+                          <span class="price_off">8,000</span>
+                          <span class="price">4,560원</span>
+                          <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"><img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out"></span>
+                      </div>
+                  </a>
+                  <div class="th_list_on">
+                      <a href="#" class="btn_wish"></a>
+                      <a href="#" class="btn_cart"></a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+<!-- end 섹션 이름 -->
+
+<!-- start footer -->
+<footer id="footer_wrap">
+    <ul class="footer_top_menu">
+        <li>
+            <a href="#">
+            <img src="../img/main_img/icon_cs.png" alt="icon_cs" class="footer_icon">
+            <span>고객문의</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+            <img src="../img/main_img/icon_delivery.png" alt="icon_delivery" class="footer_icon">
+            <span>배송&반품</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+            <img src="../img/main_img/icon_office.png" alt="icon_office" class="footer_icon">
+            <span>오시는길</span>
+            </a>
+        </li>
+    </ul>
+    <div class="footer_content">
+        <ul class="footer_menu">
+            <li>고객서비스
+                <ul class="ft_menu_sub">
+                    <li><a href="#">도움말</a></li>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">제품리콜</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">피드백</a></li>
+                </ul>
+            </li>
+            <li>회사정보
+                <ul class="ft_menu_sub">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="ft_location_wrap">
+            <p class="ft_rocation">
+                서울특별시 강남구<br>
+                남부순환로 391길 19
+            </p>
+            <ul class="ft_sns">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <div class="ft_logo"><img src="../img/main_img/logo_footer.png" alt="logo_footer"></div>
+        </div>
+        <p class="copyright">
+            copyright ⓒ 2020 Alice. All rights reserved. 본 사이트는 포트폴리오 용이며 상업적 이용이 불가능 합니다.
+        </p>
+    </div>
+</footer>
+<!-- end footer -->
+
+
+    </div>
+    <!-- end wrap -->
+  </body>
+</html>

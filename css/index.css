@@ -1,0 +1,497 @@
+
+.section_title h2 {
+    position: relative; display: inline;
+    font-size: 40px; color: #4ab5d6; line-height: 40px;
+}
+.section_title h4 {
+    font-size: 14px; font-weight: normal; line-height: 14px; margin-top: 23px;
+}
+.section_container {
+    width: 100%; margin-top: 47px;
+}
+
+/* main_banner------------------------------------ */
+
+.main_banner {
+    position: relative;
+    width: 100%; height: 550px; overflow: hidden;
+}
+.main_banner:hover .btn_main_left {
+    left: -35px; opacity: 1;
+}
+.main_banner:hover .btn_main_right {
+    right: -35px; opacity: 1;
+}
+
+.main_slider_back {
+    position: relative;
+    width: 100%; height: 550px;
+}
+.main_slider_back li {
+    display: block; opacity: 0;
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 550px;
+    z-index: 0;
+}
+.main_slider_back li.on {
+    opacity: 1;
+}
+
+.main_slider_wrap {
+    position: absolute; top: 42px; left: 403px;
+    width: 671px; height: 470px; background-color: #fff;
+    z-index: 10;
+}
+.btn_main_left, .btn_main_right {
+    position: absolute; top: 50%; margin-top: -30.5px;
+    opacity: 0; cursor: pointer;
+    transition: all 0.5s;
+}
+.btn_main_left {
+    left: 0;
+}
+.btn_main_right {
+    right: 0;
+}
+
+.main_slider {
+    position: relative; overflow: hidden;
+    width: 671px; height: 470px;
+}
+.ms_content {
+    overflow: hidden;
+    position: absolute; top: 0; left: 100%;
+    width: 100%; height: 100%; padding: 40px 0 0 35px; box-sizing: border-box;
+}
+.ms_content > img {
+    float: left;
+}
+.ms_content.on {
+    left: 0;
+}
+
+.ms_context {
+    float: right; width: 303px; height: 390px;
+    padding-top: 17px; box-sizing: border-box;
+    text-align: center;
+}
+.btn_buyNow {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+/* Best Sellers----------------------------------------- */
+
+.bestSellers_wrap {
+    width: 100%; height: auto;
+    margin-top: 165px;
+    text-align: center;
+}
+.icon_bs {
+    position: absolute; top: 50%; margin-top: -14px; left: -53px;
+}
+
+/* bs_content1 */
+.bs_content1 {
+    width: 100%; height: 481px; background-color: #ffdede;
+}
+.bs_content1 > ul {
+    width: 1400px; height: 481px; margin: 0 auto;
+    padding: 25px 55px; box-sizing: border-box;
+}
+.bs_content1 > ul > li {
+    position: relative;
+    width: 330px; height: 430px; float: left;
+    margin: 0 50px;
+}
+.bs_list_num {
+    position: absolute; top: 0; left: -51px;
+    width: 51px; height: 74px; background-color: #ff5656;
+    text-align: center; line-height: 74px; font-size: 30px; font-weight: bold;
+    color: #fff; border-radius: 10px 0 0 10px;
+}
+.bs_list_line {
+    position: absolute; top: 0; right: 0;
+    width: 3px; height: 0; background-color: #ff5656;
+    content: "";
+}
+.bs_list_item {
+    display: block;
+    /* width: 100%; */ width: 0;
+    height: 100%;
+    /* padding: 30px; */ padding: 30px 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+}
+.bs_list_item .book_img {
+    width: 270px; height: 270px;
+}
+.bs_list_contxt {
+    width: 270px; height: 130px;
+    padding: 24px 0 0 12px; box-sizing: border-box;
+    text-align: left;
+}
+.bs_list_contxt .book_title {
+    font-weight: bold;
+}
+.bs_list_contxt .bullet {
+    display: block;
+    margin-top: 10px;
+}
+.bs_list_contxt .price {
+    display: block;
+    margin-top: 20px;
+}
+
+/* bs_content2 */
+.bs_content2 {
+    position: relative;
+    width: 1400px; height: 591px; margin: 100px auto 0 auto;
+}
+
+.bs_tab_menu li {
+    width: 350px; height: 53px; float: left;
+    border: 1px solid #ffafaf; border-radius: 10px 10px 0 0; box-sizing: border-box;
+    text-align: center; line-height: 53px; font-size: 24px; font-weight: bold;
+    color: #ffafaf; cursor: pointer;
+}
+.bs_tab_menu li:hover, .bs_tab_menu li.on  {
+    border: none; background-color: #ff5656; color: #fff;
+}
+
+.bs_tab {
+    opacity: 0;
+    position: absolute; top: 53px; left: 0; opacity: 0;
+    width: 1400px; height: 0; /*100%*/ background-color: #fff;
+    transition: all 0.5s; overflow: hidden;
+}
+.bs_tab.on {
+    opacity: 1;
+    height: 100%;
+}
+.bs_tab li {
+    position: relative;
+    width: 25%; height: 270px; float: left;
+    border: 1px solid #eee; box-sizing: border-box;
+    transition: all 0.5s;
+}
+.bs_tab li:hover {
+    border-color: #ff5656;
+}
+.bs_tab li a {
+    display: block; width: 100%; height: 100%;
+}
+.bs_tab .book_img {
+    position: absolute; top: 20px; left: 20px;
+    width: 160px; height: 230px; 
+    background-repeat: no-repeat; background-size: contain; background-position: center center;
+}
+/* 책 이미지 */
+.bs_tab .book_img.book1 {background-image: url(../img/main_img/book_bs_4.jpg);}
+.bs_tab .book_img.book2 {background-image: url(../img/main_img/book_bs_5.jpg);}
+.bs_tab .book_img.book3 {background-image: url(../img/main_img/book_bs_6.jpg);}
+.bs_tab .book_img.book4 {background-image: url(../img/main_img/book_bs_7.jpg);}
+.bs_tab .book_img.book5 {background-image: url(../img/main_img/book_bs_8.jpg);}
+.bs_tab .book_img.book6 {background-image: url(../img/main_img/book_bs_9.jpg);}
+.bs_tab .book_img.book7 {background-image: url(../img/main_img/book_bs_10.jpg);}
+.bs_tab .book_img.book8 {background-image: url(../img/main_img/book_bs_11.jpg);}
+
+.bs_tab .book_img.book9 {background-image: url(../img/main_img/book_bs_12.jpg);}
+.bs_tab .book_img.book10 {background-image: url(../img/main_img/book_bs_13.jpg);}
+.bs_tab .book_img.book11 {background-image: url(../img/main_img/book_bs_14.jpg);}
+.bs_tab .book_img.book12 {background-image: url(../img/main_img/book_bs_15.jpg);}
+.bs_tab .book_img.book13 {background-image: url(../img/main_img/book_bs_16.jpg);}
+.bs_tab .book_img.book14 {background-image: url(../img/main_img/book_bs_17.jpg);}
+.bs_tab .book_img.book15 {background-image: url(../img/main_img/book_bs_18.jpg);}
+.bs_tab .book_img.book16 {background-image: url(../img/main_img/book_bs_19.jpg);}
+
+.bs_tab_contxt .book_title {
+    position: absolute; top: 46px; left: 200px; text-align: left;
+    font-weight: bold;
+}
+.bs_tab_contxt .price {
+    position: absolute; top: 153px; left: 200px;
+}
+.bs_tab_contxt .bullet {
+    position: absolute; top: 180px; left: 200px;
+}
+
+/* Treasure Hunt---------------------------------------- */
+
+.treasureHunt_wrap {
+    width: 100%; height: auto;
+    margin-top: 165px; text-align: center;
+}
+.icon_th {
+    position: absolute; top: 50%; margin-top: -10.5px; left: -50px;
+}
+
+/* th_content */
+.th_content {
+    width: 1400px; height: 755px; margin: 0 auto;
+    padding: 0 62px; box-sizing: border-box;
+}
+.th_content ul li {
+    position: relative;
+    width: 250px; height: 360px; float: left;
+    margin: 0 92px 35px 0;
+    border: 1px solid #eeeeee; box-sizing: border-box;
+}
+.th_content ul li:nth-child(4n) {margin-right: 0;}
+.th_content > li > a {
+    display: block; width: 100%; height: 100%;
+    padding: 20px; box-sizing: border-box;
+}
+
+/* 마우스오버 애니메이션 */
+.th_content li:hover .th_list_point {
+    background-color: #92d14f;
+}
+.th_content li:hover .th_list_contxt,
+.th_content li:hover .num,
+.th_content li:hover .percent,
+.th_content li:hover .txt_off {
+    color: #fff;
+}
+.th_content li:hover .bullet {
+    display: none;
+}
+.th_content li:hover .th_list_on {
+    height: 120px;
+}
+/* ----------------- */
+
+.th_list_point {
+    position: absolute; top: 0; left: -32.5px;
+    width: 65px; height: 65px; background-color: #fff;
+    border: 1px solid #92d14f; border-radius: 10px; box-sizing: border-box;
+    text-align: left; padding: 9px;
+    transition: all 0.5s;
+}
+.th_list_point .num {
+    font-size: 24px; font-weight: bold; color: #92d14f;
+    transition: all 0.5s;
+}
+.th_list_point .percent {
+    font-size: 16px; font-weight: bold; color: #92d14f;
+    vertical-align: bottom;
+    transition: all 0.5s;
+}
+.th_list_point .txt_off {
+    font-size: 12px; color: #92d14f;
+    transition: all 0.5s;
+}
+
+.th_content .book_img {
+    position: absolute; top: 20px; left: 20px;
+    width: 210px; height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.th_content .book_img1 {background-image: url(../img/main_img/book_th_1.jpg);}
+.th_content .book_img2 {background-image: url(../img/main_img/book_th_2.png);}
+.th_content .book_img3 {background-image: url(../img/main_img/book_th_3.jpg);}
+.th_content .book_img4 {background-image: url(../img/main_img/book_th_4.jpg);}
+.th_content .book_img5 {background-image: url(../img/main_img/book_th_5.jpg);}
+.th_content .book_img6 {background-image: url(../img/main_img/book_th_6.jpg);}
+.th_content .book_img7 {background-image: url(../img/main_img/book_th_7.jpg);}
+.th_content .book_img8 {background-image: url(../img/main_img/book_th_8.png);}
+
+.th_list_contxt {
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; height: 120px;
+    transition: all 0.5s;
+}
+.th_list_contxt .book_title {
+    position: absolute; top: 20px; left: 20px; text-align: left;
+    font-weight: bold; z-index: 2;
+}
+.th_list_contxt .price {
+    position: absolute; bottom: 20px; left: 20px; z-index: 2;
+}
+.th_list_contxt .price_off {
+    position: absolute; bottom: 38px; left: 20px;
+    font-size: 12px; text-decoration: line-through; z-index: 2;
+}
+.th_list_contxt .bullet {
+    position: absolute; bottom: 20px; right: 20px;
+}
+.th_list_contxt .bullet img {margin-left: 5px;}
+
+.th_list_on {
+    position: absolute; bottom: 0; left: 0; overflow: hidden;
+    width: 100%; height: 0;
+    background-color: #92d14f;
+    z-index: 1; transition: all 0.5s;
+}
+.th_list_on > a {
+    position: absolute;
+    margin-left: 15px;
+    display: block; width: 36px; height: 36px;
+    background-color: #fff; border-radius: 50%;
+}
+.btn_wish {
+    bottom: 15px; right: 70px;
+    background: url(../img/main_img/icon_heart_1.png) no-repeat center/70%;
+}
+.btn_cart {
+    bottom: 15px; right: 20px;
+    background: url(../img/main_img/icon_bag_1.png) no-repeat center/50%;
+}
+.btn_wish:hover {background-image: url(../img/main_img/icon_heart_on.png);}
+.btn_cart:hover {background-image: url(../img/main_img/icon_bag_on.png);}
+
+/* sub_banner1---------------------------------------------- */
+
+.sub_banner1 {
+    opacity: 0; position: relative;
+    width: 1400px; height: 570px; margin: 165px auto 0 auto;
+    transition: all 0.5s;
+}
+.sub_banner1.on {opacity: 1;}
+
+.sub_banner1 ul li {
+    float: left; margin-right: 25px;
+}
+.sub_banner1 ul li:last-child {
+    margin-right: 0;
+}
+.sb1_box1 {
+    position: relative; height: 0; /*285px*/
+    background-color: #ccd6b2;
+    overflow: hidden; cursor: pointer;
+}
+.sb1_line {
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+}
+.sb1_line.line1 {top: 37px; left: 95px; width: 0; /*226px*/ height: 2px;}
+.sb1_line.line2 {top: 37px; left: 319px; width: 2px; height: 0; /*114px*/}
+.sb1_line.line3 {bottom: 34px; right: 210px; width: 0; /*110px*/ height: 2px;}
+.sb1_line.line4 {bottom: 34px; right: 318px; width: 2px; height: 0; /*133px*/}
+
+.sb1_box2, .sb1_box4 {
+    display: block; position: relative;
+    width: 350px; height: 0; /*285px*/
+    border: 1px solid #d1f1c9; box-sizing: border-box;
+}
+.sb1_box2 {border-bottom: 10px solid #d1f1c9;}
+.sb1_box4 {border-top: 10px solid #d1f1c9;}
+
+.sb1_box3 {
+    position: relative; width: 650px; height: 570px;
+}
+.sb1_b3_img li {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: #fff;
+}
+.sb1_b3_img li:first-child {
+    z-index: 1;
+}
+.sb1_box3_contxt {
+    position: absolute; bottom: 319px; left: 50%; margin-left: -225px;
+    width: 450px; height: 0; opacity: 0;
+    background: url(../img/main_img/sub_contxt_1.png) no-repeat center bottom/cover;
+    z-index: 3;
+}
+
+.sb1_box5 {
+    position: relative; height: 0; /*285px*/
+    background-color: #e1eee4;
+    overflow: hidden; cursor: pointer;
+}
+.btn_arrow_sub {
+    position: absolute; display: block;
+    width: 24px; height: 42px;
+    top: 154px; right: 32px;
+    background: url(../img/main_img/btn_arrow_sub3.png) no-repeat center/cover;
+    cursor: pointer; z-index: 1;
+}
+
+.sub_banner1 .book_img {
+    position: absolute; top: 20px; left: 20px;
+    width: 150px; height: 245px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sub_banner1 .book_title {
+    position: absolute; top: 82px; left: 190px;
+    font-weight: bold;
+}
+.sub_banner1 .price {
+    position: absolute; top: 145px; left: 190px;
+}
+.sub_banner1 .price_off {
+    position: absolute; top: 133px; left: 190px;
+    font-size: 12px; text-decoration: line-through;
+}
+
+.sub_banner1 .book_img1 {background-image: url(../img/main_img/book_sub_1.jpg);}
+.sub_banner1 .book_img2 {background-image: url(../img/main_img/book_sub_2.JPG);}
+
+/* Alice Goods--------------------------------------------- */
+
+.aliceGoods_wrap {
+    width: 1400px; height: auto; margin: 175px auto 0 auto;
+    text-align: center;
+}
+.icon_ag {
+    position: absolute; top: 50%; margin-top: -16.5px; left: -50px;
+}
+.ag_content ul li {
+    float: left; margin-right: 53px;
+}
+.ag_content ul li:last-child {
+    margin-right: 0;
+}
+.ag_content li a {
+    display: block;
+    width: 310px; height: 310px; background-color: #f7f4dc;
+    border-radius: 50%; overflow: hidden;
+}
+.ag_list_img {
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transition: all 0.5s;
+}
+.ag_list_img:hover {
+    transform: scale(1.2);
+}
+.ag_list_img1 {background-image: url(../img/main_img/goods_1.png);}
+.ag_list_img2 {background-image: url(../img/main_img/goods_2.png);}
+.ag_list_img3 {background-image: url(../img/main_img/goods_3.png);}
+.ag_list_img4 {background-image: url(../img/main_img/goods_4.png);}
+
+.ag_list_contxt::before {
+    display: block; position: absolute; width: 40px; height: 3px;
+    left: 50%; margin-left: -20px; top: -20px;
+    content: "";
+    background-color: #fcea6f;
+}
+.ag_list_contxt {
+    position: relative; top: 40px;
+}
+.goods_title {
+    font-weight: bold;
+}
+.goods_price {
+    display: block; margin-top: 10px;
+}
+
+/* sub_banner2---------------------------------------- */
+
+.sub_banner2 {
+    position: relative;
+    width: 100%; height: 350px; margin: 140px 0 165px 0;
+    background: url(../img/main_img/sub_banner_4.png) no-repeat center/cover;
+}
+.btn_getItNow {
+    position: absolute; bottom: 46px; left: 50%; margin-left: -158px;
+}

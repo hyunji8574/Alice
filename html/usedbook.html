@@ -1,0 +1,618 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>Alice</title>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> -->	
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.6, minimum-scale=1.0"/>
+
+	<!-- meta 태그 -->
+	<meta name="Subject" content="Alice Premium English Book Store">
+	<meta name="Title" content="Alice">
+	<meta name="Keywords" content="Alice, Bookstore, English, 앨리스, 서점, 영어, 영어원서, 포트폴리오">
+	<meta name="Description" content="앨리스">
+	<meta name="Author" content="2020 더조은 1조">
+	<meta name="Publisher" content="2020 더조은 1조">
+	<meta name="Classification" content="Alice">
+	<meta name="Location" content="서울시 서초구 서산빌딩 4, 5F 더조은컴퓨터아카데미">
+	<meta name="Author-Date" content="2020-06-02">
+	<meta name="Copyright" content="copyright@Alice.com">
+	<meta name="Robots" content="index,follow"> 
+
+    <!-- 파비콘 -->
+	<link rel="shortcut icon" href="../img/main_img/favicon-16x16.png">
+	<link rel="apple-touch-icon" href="../img/main_img/favicon-16x16.png">
+
+    <!-- 공통 스타일 시트 -->
+	<link href='../css/reset.css' type='text/css' rel='stylesheet'>
+	<link href='../css/common.css' type='text/css' rel='stylesheet'>
+	<link href='../css/header.css' type='text/css' rel='stylesheet'>
+    <link href='../css/footer.css' type='text/css' rel='stylesheet'>
+
+    <!-- 현재 페이지 스타일 시트 -->
+	<link href='../css/usedbook.css' type='text/css' rel='stylesheet'>
+
+    <!-- 기본 스크립트 -->
+	<script src='../js/lib/jquery-1.12.4.min.js' type='text/javascript' charset='utf-8'></script>
+	<!-- <script src='../js/lib/jquery.mobile-1.4.5.min.js' type='text/javascript' charset='utf-8'></script> -->
+	<script src='../js/lib/jquery.easing.1.3.js'></script>
+	
+	<!-- user jQuery 웹개발자용 -->
+    <!-- Fontawesome include -->
+    <script src="https://kit.fontawesome.com/9b9de0467f.js" crossorigin="anonymous"></script>
+	<!-- 헤더 스크립트 -->
+	<script src='../js/header.js'></script>
+    <!-- 현재 페이지 스크립트 -->	
+    
+	<!-- 크로스브라우징 -->
+	<!--[if (lte IE 9)]>
+	<script src='js/lib/IE9.js' type='text/javascript' charset='utf-8'></script>		
+	<![endif]-->
+
+	<!--[if (lte IE 8)]>
+	<script src='js/lib/html5shiv.min.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/PIE.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/jqPIE.js' type='text/javascript' charset='utf-8'></script>		
+	<link href='css/ie78.css' rel='stylesheet' type='text/css'>
+	<![endif]-->
+
+</head>
+<body>
+
+<!-- start wrap -->
+<div id='wrap'>
+
+<!--start top section -->
+<section class="top_panel">
+    <div class="back">
+        <div class="login_wrap">
+            <a href="#" class="pause"></a>
+            <div class="login_container top_wrap1">
+                <div class="title">
+                    <img src="../img/login_img/welcome.png" alt="welcome">
+                </div>
+                <div class="login_id">
+                    <input type="text" name="text1" placeholder="master@naver.com">
+                    <div class="person">
+                        <img src="../img/login_img/log_person.png" alt="log_person">
+                    </div>
+                </div>
+                <div class="login_password">
+                    <input type="password" name="text2" class="bar" placeholder="password">
+                    <div class="lock">
+                        <img src="../img/login_img/log_lock.png" alt="log_lock">
+                    </div>
+                </div> 
+                <div class="button_signin">
+                    <a href="#"><span>SIGN IN</span></a>
+                </div>
+                <div class="et">
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">Sign Up</a>
+                </div>
+                <div class="sns">
+                    <img src="../img/login_img/log_or.png" alt="or">
+                    <a href="#" class="google">
+                        <img src="../img/login_img/google_logo.png" alt="google_logo">
+                        <span>SIGN IN WITH GOOGLE</span>
+                    </a>
+                    <a href="#" class="twitter">
+                        <img src="../img/login_img/twitter_logo.png" alt="twitter_logo">
+                        <span>SIGN IN WITH TWITTER</span>
+                    </a>
+                    <a href="#" class="naver">
+                        <img src="../img/login_img/naver_logo.png" alt="naver_logo">
+                        <span>SIGN IN WITH NAVER</span>
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- end login -->
+    <!-- end joinUs -->
+    <div class="back">
+        <div class="join_wrap">
+            <a href="#" class="pause"></a>
+            <div class="join_container top_wrap1">
+                <div class="title">
+                    <img src="../img/login_img/sign_up.png" alt="sign_up">
+                </div>
+                <div class="id_area">
+                    <label for="email">ID</label>
+                    <ul class="email_s">
+                        <li><input type="text" id="email" placeholder="이메일아이디"></li>
+                        <li>@</li>
+                        <li><input type="text" placeholder="이메일주소" ></li>
+                    </ul>
+                </div>
+                <div class="password_area">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" placeholder="비밀번호입력">
+                </div>
+                <div class="password_area">
+                    <label for="password_co">Confirm password</label>
+                    <input type="password" id="password_co"placeholder="비밀번호확인" >
+                </div>
+                <div class="password_area">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" placeholder="이름을 입력하세요">
+                </div>
+                <img src="../img/login_img/join_us_logo.png" class="join_logo" alt="join_us_logo">
+                <div class="button_signin ">
+                    <a href="#"><span>SIGN IN</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end top section -->
+
+<!-- start header -->
+<header id="header_wrap">
+    <div class="top_menu_wrap">
+        <div class="inner">
+            <ul class="top_menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="logo_area">
+        <div class="inner">
+            <div class="logo"><a href="../index.html"><img src="../img/main_img/logo.png" alt="logo"></a></div>
+            <div class="search_area">
+                <input type="text" name="search" class="search_input" placeholder="Search..">
+                <a href="#"><div class="btn_search"><img src="../img/main_img/btn_search.png" alt="btn_search"></div></a>
+            </div>
+        </div>
+    </div>
+    <div class="gnb_wrap">
+        <div class="inner">
+            <ul class="gnb">
+                <li><a href="#"><img src="../img/main_img/btn_bars.png" alt="btn_bars" class="btn_bars">ALL</a>
+                    <ul class="categories">
+                        <li>레벨별
+                            <ul class="categories_sub">
+                                 <li><a href="#">AR레벨</a></li>
+                                 <li><a href="#">Lexile 레벨</a></li>
+                            </ul>
+                        </li>
+                        <li>장르별
+                            <ul class="categories_sub">
+                                <li><a href="#">소설/시</a></li>
+                                <li><a href="#">위인전</a></li>
+                                <li><a href="#">동화</a></li>
+                                <li><a href="#">경제/과학</a></li>
+                                <li><a href="#">만화</a></li>
+                                <li><a href="#">교육서적</a></li>
+                                <li><a href="#">자기계발</a></li>
+                                <li><a href="#">예술/역사</a></li>
+                                <li><a href="#">기타</a></li>
+                           </ul>
+                        </li>
+                        <li>작가별
+                            <ul class="categories_sub">
+                                <li><a href="#">로알드 달</a></li>
+                                <li><a href="#">로이스 로리</a></li>
+                                <li><a href="#">루이스 새커</a></li>
+                                <li><a href="#">사라 스튜어트</a></li>
+                                <li><a href="#">앤서니 브라운</a></li>
+                                <li><a href="#">에릭 칼</a></li>
+                                <li><a href="#">J.K. 롤링</a></li>
+                           </ul>
+                        </li>
+                        <li>시리즈별
+                            <ul class="categories_sub">
+                                <li><a href="#">뉴베리 수상작</a></li>
+                                <li><a href="#">The Chronicles of Narnia</a></li>
+                                <li><a href="#">My Weird School Daze</a></li>
+                                <li><a href="#">Magic Tree House</a></li>
+                                <li><a href="#">Andrew Clements</a></li>
+                                <li><a href="#">Judy Moody</a></li>
+                                <li><a href="#">E. B. WHITE</a></li>
+                                <li><a href="#">Dragonsitter Library Boxset</a></li>
+                                <li><a href="#">Marvin Redpost</a></li>
+                           </ul>
+                        </li>
+                        <li>Picture Books
+                            <ul class="categories_sub">
+                                <li><a href="#">Best</a></li>
+                                <li><a href="#">set</a></li>
+                                <li><a href="#">칼데콧 수상작</a></li>
+                                <li><a href="#">디즈니</a></li>
+                                <li><a href="#">Book & CD</a></li>
+                                <li><a href="#">A-D</a></li>
+                                <li><a href="#">E-L</a></li>
+                                <li><a href="#">M-W</a></li>
+                           </ul>
+                        </li>
+                        <li>Readers Books
+                            <ul class="categories_sub">
+                                <li><a href="#">Best</a></li>
+                                <li><a href="#">Phonix</a></li>
+                                <li><a href="#">I Can Read</a></li>
+                                <li><a href="#">Step into Reading</a></li>
+                                <li><a href="#">Read to Read</a></li>
+                                <li><a href="#">Scholatic Reading</a></li>
+                                <li><a href="#">Penguin(Puffin) Readers</a></li>
+                                <li><a href="#">National Geographic</a></li>
+                                <li><a href="#">Dr.Seuss Readers</a></li>
+                                <li><a href="#">DK Readers</a></li>
+                                <li><a href="#">World of Reading</a></li>
+                           </ul>
+                        </li>
+                        <li>Chapter Books
+                            <ul class="categories_sub">
+                                <li><a href="#">A-C</a></li>
+                                <li><a href="#">D-F</a></li>
+                                <li><a href="#">I-L</a></li>
+                                <li><a href="#">G-H</a></li>
+                                <li><a href="#">M-N</a></li>
+                                <li><a href="#">T-W</a></li>
+                                <li><a href="#">X-Z</a></li>
+                           </ul>
+                        </li>
+                        <li>오디오북</li>
+                        <li>E-Book</li>
+                    </ul>
+                </li>
+                <li><a href="newbooks.html">New Arrivals</a>
+                    <ul class="gnb_sub">
+                        <li><a href="#">이달의신간</a></li>
+                        <li><a href="#">추천신간</a></li>
+                    </ul>
+                </li>
+                <li><a href="bestseller.html">Best Sellers</a>
+                    <ul class="gnb_sub">
+                        <li><a href="#">주간베스트</a></li>
+                        <li><a href="#">월간베스트</a></li>
+                        <li><a href="#">스테디셀러</a></li>
+                        <li><a href="#">우리들만의베스트</a></li>
+                    </ul>
+                </li>
+                <li><a href="learningbooks.html">Learning Books</a>
+                    <ul class="gnb_sub">
+                        <li><a href="#">어린이교재</a></li>
+                        <li><a href="#">Teaching Guide</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">Events</a>
+                    <ul class="gnb_sub">
+                        <li><a href="#">진행중인이벤트</a></li>
+                        <li><a href="#">마감/결과확인</a></li>
+                    </ul>
+                </li>
+                <li><a href="spectal_offers.html">Special Offers</a>
+                    <ul class="gnb_sub">
+                        <li><a href="#">1+1특가</a></li>
+                        <li><a href="#">파격할인</a></li>
+                    </ul>
+                </li>
+                <li class="on"><a href="#">Used Books</a></li>
+                <li><a href="alice_goods.html">Alice Goods</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- start main_banner -->
+<div class="main_banner">
+    <ul class="main_title">
+       <li><img src="../img/usedbook_img/Used Books_title.png" alt=title"></li>
+       <li><img src="../img/usedbook_img/subtitle.png" alt="subtitle"></li>
+    </ul>
+</div>    
+<!-- end main_banner --> 
+
+<!-- start usedbook_search -->
+<section class="usedbook_search">
+    <div class="usedbook_searchbox">
+        <h3>Search Our Treasury Used Books</h3>
+        <p id="title_sub">놀라운 가격의 중고서적을 만나보세요.</p>
+        <form action="#">
+           <ul class="form_1">
+               <li><label for="title"><P class="green">T</P><p class="gray">itle</p></label><input type="text" id="title" name="title"></li>
+               <li><label for="Keyword" ><P class="green">K</P><p class="gray">eyword</p></label><input type="text" id="Keyword" name="Keyword"></li>
+               <li><label for="author" ><P class="green">A</P><p class="gray">uthor</p></label><input type="text" id="author" name="author"></li>
+               <li><label for="isbn" ><P class="green">I</P><p class="gray">SBN</p></label><input type="text" id="isbn" name="isbn"></li>
+            </ul>
+            <ul class="form_2">
+               <li>
+                    <label for="level"><P class="green">L</P><p class="gray">evel</p></label>
+                    <input type="checkbox" name="level1" value="Lexile300_800" class="check_1"><label for="level2" class="level">Lexile 300~800</label>
+                    <input type="checkbox" name="level2" value="Lexile400_900" class="check"><label for="level2" class="level">Lexile 400~900</label>
+                    <input type="checkbox" name="level3" value="Lexile600_1100" class="check"><label for="level3" class="level">Lexile 600~1100</label>
+                </li>
+                <li id="indent">
+                    <label for="level" ><P class="green"> </P><p class="gray"> </p></label>
+                    <input type="checkbox" name="level1" value="Lexile300_800" class="check_1"><label for="level2" class="level">Lexile 700~1200</label>
+                    <input type="checkbox" name="level2" value="Lexile400_900" class="check"><label for="level2" class="level">Lexile 800~1300</label>
+                    <input type="checkbox" name="level3" value="Lexile600_1100" class="check"><label for="level3" class="level">Lexile 1400 이상</label>
+                </li>
+            </ul>
+                
+            <ul class="form_3">
+                <li>
+                    <label for="rate" ><P class="green">B</P><p class="gray">y Rate</p></label>
+                    <input type="checkbox" name="rate1" value="rate1" class="check_1"> <label for="rate1"> See All</label>
+                    <input type="checkbox" name="rate2" value="rate2" class="check"><label for="rate2"> Over 50% Only</label>
+                    <input type="checkbox" name="rate3" value="rate3" class="check"><label for="rate3"> Over 30% Only</label>
+                </li>
+            </ul>
+            <ul class="form_4">
+                <li>
+                <label for="set" ><P class="green">S</P><p class="gray">et Only</p></label>
+                <input type="checkbox" name="set" value="set" class="check_1"><label for="srt" id="wide_label"> Contained all the Serise Books Only</label>
+                </li>
+                <li><!--  <input type="submit" value="Search" id="btn_serch">-->
+                    <a href="#"  id="btn_search"> Search</a>
+                </li>
+            </ul>
+          </form>  
+        </div>    
+</section>
+<!--start usedbook_event -->
+<section class="usedbook_event">
+    <div id="event_box">
+        <h1>Best Illustrated Book of 2020!</h1>
+        <h3>I Want My Hat Back </h3>
+        <h5>by Jon Klassen  (Author, Illustrator)</h5>
+        <p class="txt">이 책은 JON KLASSEN 작가의 첫 번째 동화로 뉴욕타임즈 베스트셀러에 오랜기간 머물며<br> 
+            작가에게 명성을 가져다 준 작품입니다. 모자를 잃어버린 곰은 만나는 친구들마다 모자를 보았냐고 그러나...</p>
+        <p><a href="#">더 보기></a></p>
+        <p id="img_click"><a href="#"><img src="../img/usedbook_img/hat_click.png" alt=""></a> </p>
+
+    </div>
+        
+</section>
+<!-- start Usedbook Treasure Hunt -->
+<section class="treasureHunt_wrap">
+    <div class="section_title">
+        <ul>
+            <li><h2><img src="../img/usedbook_img/alice08_1.png" alt="icon" class="icon_th"> Treasure Hunt</h2></li>
+            <li></li><h4>앨리스가 찾은 특별한 중고서적을 한곳에 모았습니다.</h4></li>
+        </ul>
+    </div>
+    <div class="section_container">
+        <div class="th_content">
+            <ul>
+                <li>
+                    <div class="th_list_point">
+                        <span class="num">55</span><span class="percent">%</span>
+                        <span class="txt_off">off</span>
+                    </div>
+                    <a href="#">
+                        <div class="book_img book_img1"></div>
+                        <!-- <img src="../img/main_img/book_th_1.jpg" alt="book_th_1" class="book_img"> -->
+                        <div class="th_list_contxt">
+                            <p class="book_title">The Magic & Mystery of 
+                                Trees</p>
+                            <span class="price_off">8,600</span>
+                            <span class="price">4,730원</span>
+                            <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"><img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out"></span>
+                        </div>
+                    </a>
+                    <div class="th_list_on">
+                        <a href="#" class="btn_wish"></a>
+                        <a href="#" class="btn_cart"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="th_list_point">
+                        <span class="num">50</span><span class="percent">%</span>
+                        <span class="txt_off">off</span>
+                    </div>
+                    <a href="#">
+                        <div class="book_img book_img2"></div>
+                        <!-- <img src="../img/main_img/book_th_2.png" alt="book_th_2" class="book_img"> -->
+                        <div class="th_list_contxt">
+                            <p class="book_title">Wayside School gets a Little 
+                                Strangerr</p>
+                            <span class="price_off">8,200</span>
+                            <span class="price">4,100원</span>
+                            <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"><img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out"></span>
+                        </div>
+                    </a>
+                    <div class="th_list_on">
+                        <a href="#" class="btn_wish"></a>
+                        <a href="#" class="btn_cart"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="th_list_point">
+                        <span class="num">51</span><span class="percent">%</span>
+                        <span class="txt_off">off</span>
+                    </div>
+                    <a href="#">
+                        <div class="book_img book_img3"></div>
+                        <!-- <img src="../img/main_img/book_th_3.jpg" alt="book_th_3" class="book_img"> -->
+                        <div class="th_list_contxt">
+                            <p class="book_title">Hatchet </p>
+                            <span class="price_off">10,600</span>
+                            <span class="price">5,400원</span>
+                            <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                        </div>                     
+                    </a>
+                    <div class="th_list_on">
+                        <a href="#" class="btn_wish"></a>
+                        <a href="#" class="btn_cart"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="th_list_point">
+                        <span class="num">48</span><span class="percent">%</span>
+                        <span class="txt_off">off</span>
+                    </div>
+                    <a href="#">
+                        <div class="book_img book_img4"></div>
+                        <!-- <img src="../img/main_img/book_th_4.jpg" alt="book_th_4" class="book_img"> -->
+                        <div class="th_list_contxt">
+                            <p class="book_title">The Mysterious Benedict 
+                                Society</p>
+                            <span class="price_off">11,500</span>
+                            <span class="price">5,520원</span>
+                            <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                        </div>                   
+                    </a>
+                    <div class="th_list_on">
+                        <a href="#" class="btn_wish"></a>
+                        <a href="#" class="btn_cart"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="th_list_point">
+                        <span class="num">50</span><span class="percent">%</span>
+                        <span class="txt_off">off</span>
+                    </div>
+                    <a href="#">
+                        <div class="book_img book_img5"></div>
+                        <!-- <img src="../img/main_img/book_th_5.jpg" alt="book_th_5" class="book_img"> -->
+                        <div class="th_list_contxt">
+                            <p class="book_title">Unusual Chickens for the 
+                                Exceptional Poultry Farmer</p>
+                            <span class="price_off">11,500</span>
+                            <span class="price">5,520원</span>
+                            <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"><img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out"></span>
+                        </div>
+                    </a>
+                    <div class="th_list_on">
+                        <a href="#" class="btn_wish"></a>
+                        <a href="#" class="btn_cart"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="th_list_point">
+                        <span class="num">49</span><span class="percent">%</span>
+                        <span class="txt_off">off</span>
+                    </div>
+                    <a href="#">
+                        <div class="book_img book_img6"></div>
+                        <!-- <img src="../img/main_img/book_th_6.jpg" alt="book_th_6" class="book_img"> -->
+                        <div class="th_list_contxt">
+                            <p class="book_title">Watch Us Rise</p>
+                            <span class="price_off">9,300</span>
+                            <span class="price">4,650원</span>
+                            <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"><img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out"></span>
+                        </div>
+                    </a>
+                    <div class="th_list_on">
+                        <a href="#" class="btn_wish"></a>
+                        <a href="#" class="btn_cart"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="th_list_point">
+                        <span class="num">52</span><span class="percent">%</span>
+                        <span class="txt_off">off</span>
+                    </div>
+                    <a href="#">
+                        <div class="book_img book_img7"></div>
+                        <!-- <img src="../img/main_img/book_th_7.jpg" alt="book_th_7" class="book_img"> -->
+                        <div class="th_list_contxt">
+                            <p class="book_title">Walking with Miss Millie</p>
+                            <span class="price_off">12,600</span>
+                            <span class="price">6,550원</span>
+                            <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"></span>
+                        </div>
+                    </a>
+                    <div class="th_list_on">
+                        <a href="#" class="btn_wish"></a>
+                        <a href="#" class="btn_cart"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="th_list_point">
+                        <span class="num">57</span><span class="percent">%</span>
+                        <span class="txt_off">off</span>
+                    </div>
+                    <a href="#">
+                        <div class="book_img book_img8"></div>
+                        <!-- <img src="../img/main_img/book_th_8.png" alt="book_th_8" class="book_img"> -->
+                        <div class="th_list_contxt">
+                            <p class="book_title">A Girl a Raccoon and the 
+                                Midnight Moon</p>
+                            <span class="price_off">8,000</span>
+                            <span class="price">4,560원</span>
+                            <span class="bullet"><img src="../img/main_img/bullet_us.png" alt="bullet_us"><img src="../img/main_img/bullet_sold_out.png" alt="bullet_sold_out"></span>
+                        </div>
+                    </a>
+                    <div class="th_list_on">
+                        <a href="#" class="btn_wish"></a>
+                        <a href="#" class="btn_cart"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end Treasure Hunt -->
+
+<!-- start footer -->
+<footer id="footer_wrap">
+    <ul class="footer_top_menu">
+        <li>
+            <a href="#">
+            <img src="../img/main_img/icon_cs.png" alt="icon_cs" class="footer_icon">
+            <span>고객문의</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+            <img src="../img/main_img/icon_delivery.png" alt="icon_delivery" class="footer_icon">
+            <span>배송&반품</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+            <img src="../img/main_img/icon_office.png" alt="icon_office" class="footer_icon">
+            <span>오시는길</span>
+            </a>
+        </li>
+    </ul>
+    <div class="footer_content">
+        <ul class="footer_menu">
+            <li>고객서비스
+                <ul class="ft_menu_sub">
+                    <li><a href="#">도움말</a></li>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">제품리콜</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">피드백</a></li>
+                </ul>
+            </li>
+            <li>회사정보
+                <ul class="ft_menu_sub">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="ft_location_wrap">
+            <p class="ft_rocation">
+                서울특별시 강남구<br>
+                남부순환로 391길 19
+            </p>
+            <ul class="ft_sns">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <div class="ft_logo"><img src="../img/main_img/logo_footer.png" alt="logo_footer"></div>
+        </div>
+        <p class="copyright">
+            copyright ⓒ 2020 Alice. All rights reserved. 본 사이트는 포트폴리오 용이며 상업적 이용이 불가능 합니다.
+        </p>
+    </div>
+</footer>
+<!-- end footer -->
+</div>
+<!-- end wrap -->
+
+</body>
+</html>

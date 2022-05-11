@@ -1,0 +1,15 @@
+
+/* common------------------------------------ */
+
+html, body {
+    width: 100%; height: auto;
+    font: normal 16px 'Nanum Gothic'; color: #777; overflow-x: hidden;
+}
+a, ul, ol, li {
+    color: #777;
+}
+
+section::after {
+    display: block; content: "";
+    clear: both;
+}
